@@ -39,6 +39,7 @@ function OnlineAddmissionForm() {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(onlineAddmissionFomData),
+                mode: "cors"
             });
 
             if (response.ok) {
