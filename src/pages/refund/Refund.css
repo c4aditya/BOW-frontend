@@ -1,0 +1,119 @@
+.refund-page {
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    overflow: hidden;
+}
+
+.refund-head {
+    align-items: center;
+    text-align: center;
+    height: 350px;
+    background: url('/refunddddd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 25% 30%;
+}
+
+
+.refund-heading {
+    text-align: center;
+    color: black;
+    top: 40%;
+    left: 10%;
+    height: 25%;
+    position: absolute;
+}
+
+.refund-heading h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.refund-text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    width: 85%;
+    margin: 35px auto 20px auto;
+}
+
+.refund-policies h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7054E6;
+    margin: 1.5% auto;
+    width: 85%;
+    text-align: left;
+}
+
+.refund-policies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.refund-policies li {
+    display: flex;
+    align-items: baseline;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    font-family:  sans-serif;
+}
+
+.refund-policies li svg {
+    font-size: 1.2em;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    color: #7054E6;
+}
+.refund-body p {
+    font-family:  sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .refund-head {
+        height: 200px;
+        background-position: center;
+    }
+
+    .refund-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .refund-text,
+    .refund-policies h1,
+    .refund-policies li {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+
+    .refund-policies li svg {
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .refund-heading h1 {
+        font-size: 1.2rem;
+    }
+
+    .refund-text,
+    .refund-policies h1,
+    .refund-policies li {
+        font-size: 0.8rem;
+    }
+
+    .refund-policies li svg {
+        font-size: 0.8rem;
+    }
+}

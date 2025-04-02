@@ -1,0 +1,95 @@
+.heading-instructors{
+  color:#91282B;
+  margin-bottom: 30px;
+}
+.main-image-our-instructors {
+  display: flex;
+  position: relative; 
+  gap: 10%;
+  width: fit-content;
+}
+
+.image-our-instructors {
+
+  gap: 50px;
+  width: fit-content;
+  position: relative; /* Required for absolute positioned children */
+}
+
+.image-our-instructors img {
+  border-radius: 100%;
+  
+  width: 100%;
+  position: relative;
+  transition: border-radius 0.4s ease-in-out; /* Smooth effect */
+}
+
+/* ✅ Jab `.image-our-instructors` pe hover hoga, tab image ka border-radius kam hoga */
+.image-our-instructors:hover img {
+  border-radius: 5%;
+}
+
+.more-about-instructors {  
+  width: 80%;
+  margin: auto;
+}
+
+.social-meadia-links-instructors {
+  background-color: skyblue;
+  padding: 10px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: translateX(5%);
+  transition: 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.social-meadia-links-instructors:hover {
+  opacity: 1;
+}
+
+.image-our-instructors img:hover ~ .social-meadia-links-instructors {
+  opacity: 1;
+}
+
+.image-our-instructors:hover .social-meadia-links-instructors,
+.social-meadia-links-instructors:hover {
+  display: block;
+  transform: translateX(0%);
+}
+
+.social-meadia-links-instructors ul li {
+  list-style: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.social-meadia-links-instructors ul li svg {
+  color: white;
+  font-weight: 800;
+}
+
+.parant-name {
+  position: relative;
+}
+
+.more-about-instructors-name {
+  opacity: 0;
+  background-color: #87CEFA;
+  padding: 5%;
+  
+  position: absolute;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -105%);
+  transition: 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* ✅ Image ke hover hone par name visible hoga */
+.image-our-instructors:hover .more-about-instructors-name {
+  opacity: 1;
+}
+
+.parant-name:hover ~ .social-meadia-links-instructors {
+  opacity: 1;
+}

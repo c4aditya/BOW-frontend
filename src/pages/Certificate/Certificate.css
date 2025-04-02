@@ -1,0 +1,204 @@
+.cert-page {
+  font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+background-color: #f9f9f9;
+overflow: hidden;
+}
+
+.certbg {
+  background: url('/certificatebb.jpg')  ;
+  /* background-position:; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black; 
+  background-position: 50% 25%;
+  text-align: center;
+  height: 380px;
+  position: relative;
+  background-position: bottom;
+}
+
+.cert-heading {
+  text-align: center;
+  margin-bottom: 0;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+}
+
+.cert-heading p{
+  margin-top: 2%;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cert-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Copperplate;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
+}
+
+.cert-content {
+  display: flex;
+  /* background: url('/certificatebg.png'); */
+  background-color: #eff9fa;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-size: contain;
+  /* gap: 0px; */
+}
+
+.cert-section{
+background: white;
+padding: 18px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin: 5%;
+flex:1;
+height: auto;
+}
+.cert-form {
+  margin: 0px 0px 0px 0px;
+}
+.cert-head h1{
+  color: #91282B;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cert-form label{
+  display: block;
+  margin: 11px 0 11px;
+  font-weight: bold;
+}
+
+.cert-form input {
+  width: 98%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}   
+.submitbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.submitbtn button{
+  /* background: #000; */
+background-color:#91282B;
+color: #fff;
+width: 15%;
+font-weight: 600;
+border: none;
+margin-right: 0px;
+padding: 11px 16px;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s;
+
+}
+.submitbtn button:hover{
+  background: #333;
+}
+
+.cert-section p{
+  /* margin-top: 37px; */
+  padding: 2% 0% 2% 0%;
+  width: 100%;
+}
+
+.certificate{
+  /* color: black; */
+  text-align: center;
+
+}
+.certificate-img {
+  width: 30%;
+  margin: 4%;
+  /* align-items: center; */
+}
+.certificate h1{
+  margin: 30px 25px 0px 25px;
+  /* margin-top: 35px; */
+  color: black;
+}
+@media  (max-width: 780px) {
+
+  .cert-section {
+      padding: 18px 18px 8px 18px;
+  }
+  .cert-form input {
+      width: 97%;
+
+  }
+  /* .cert-heading {
+      top: 50%;
+      left: 50%;
+  } */
+
+
+}
+  
+
+@media (max-width:480px) {
+  .cert-heading h1 {
+      font-size: 1.6rem;
+     
+      
+    }
+    .cert-heading {
+      /* align-self: anchor-center; */
+      align-items: center;
+      left: 36%;
+      
+      /* display: contents; */
+    }
+    .certbg {
+      background-size: cover;
+      height: 300px;
+    }
+    .cert-section {
+      margin: 0;
+      padding: 14px;
+    }
+    .cert-head h1 {
+      font-size: 1.4rem;
+      margin: 12px 0px;
+    }
+    .cert-form label {
+      margin: 7px 0px;
+    }
+    .cert-form input {
+      width: 93%;
+      padding: 8px;
+    }
+    .certificate-img {
+      width: 85%;
+      margin: 20px;
+
+    }
+    .certificate h1 {
+      margin: 15px;
+      font-size: 1.8rem;
+    }
+    .cert-section p {
+      padding:0;
+      margin-top: 10px;
+      font-size: 0.65rem;
+      text-align: justify;
+    }
+    .submitbtn button {
+      width: 97px;
+      
+    }
+}

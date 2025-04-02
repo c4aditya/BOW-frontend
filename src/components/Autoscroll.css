@@ -1,0 +1,104 @@
+.app-container {
+    width: 100%; 
+    
+    height: auto;
+    
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; 
+    padding: 8px; 
+    background-color: white; 
+    box-sizing: border-box; 
+    /* border-radius: 10px;  */
+    overflow: hidden;
+}
+  .wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-autoscroll {
+    font-size: 35px;
+    font-weight: 500;
+    color: #02203c;
+    margin-bottom: 10px;
+  }
+  
+  .note {
+    font-size: 18px;
+    font-weight: 200;
+    color: #7c8e9a;
+    margin-bottom: 40px;
+  }
+  
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    /* width: 1200px; */
+    /* mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); */
+  }
+  
+  .marquee-group {
+    display: flex;
+    animation: scroll 25s linear infinite;
+  }
+  
+  .image-group {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  .image-auto {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    aspect-ratio: 16 / 9;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .text-autoscroll {
+        font-size: 24px;
+    }
+
+    .note {
+        font-size: 16px;
+    }
+
+    .marquee-group {
+        animation-duration: 20s; /* Faster animation on small screens */
+    }
+
+    .image-auto {
+        width: 100px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-autoscroll {
+        font-size: 20px;
+    }
+
+    .note {
+        font-size: 14px;
+    }
+
+    .image-auto {
+        width: 80px;
+        height: 70px;
+    }
+}

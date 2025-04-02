@@ -1,0 +1,276 @@
+.about-us-layout {
+  all: unset;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; 
+ 
+  
+} 
+
+/* About Us Section */
+.about-us-section-bg {
+  
+  background: url('aboutbg.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire section */
+  /* top: 40%;
+  left: 11%; */
+  
+  /* padding: 9%; */
+  color: white; /* Ensures text is readable over the background */
+  position: relative;
+  height: 400px;
+ 
+}
+.about-us-page {
+  position: absolute;
+  top:50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+.about-us-page h1 {
+  font-size: 3rem; 
+  color: white;
+  text-align: left;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-us-page p {
+  font-size: 1.4rem; 
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family:sans-serif;
+}
+
+.why-us-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.why-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.why-us-container.reverse {
+  flex-direction: row; 
+}
+
+.why-us-text {
+  flex: 1;
+  padding: 20px;
+
+}
+
+.why-us-text h3 {
+  font-size: 1.8rem;
+  color: #91282B;
+  margin-bottom: 15px;
+  
+
+}
+
+.why-us-text p {
+  font-size: 1.1rem;
+  color: #050F2A;
+  line-height: 1.6;
+  text-align: justify;
+  font-family:sans-serif;
+  padding-right: 10px;
+
+}
+
+.why-us-image {
+  flex: 1;
+  text-align: center;
+  
+}
+
+.why-us-image img {
+  width: 100%;
+  max-width: 300px;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.why-us-image.second{
+  position: relative;
+}
+
+.why-us-image.second img {
+  width: 100%; /* Adjust width for the second image */
+  max-width: 500px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+
+}
+.why-us-image.second .dotted-pattern{
+position:absolute;
+bottom: -80px;
+left: 10px;
+width: 200px;
+height: 200px;
+pointer-events: none;
+border-radius: 100%;
+z-index: 1;
+background: none;
+opacity: 1;
+}
+/* Message from Chairman Section */
+.message-chairman-section {
+
+
+  padding: 60px 20px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.message-chairman h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.message-chairman p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+  
+}
+
+
+.why-us-image, .why-us-text {
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.why-us-image.visible, .why-us-text.visible {
+opacity: 1;
+transform: translateY(0);
+}
+/* .container{
+max-width: 1280px;
+margin: 0 auto;
+
+} */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-us-container {
+    /* flex-direction: column;
+    text-align: center; */
+    margin-left: 5px;
+  }
+  .why-us-section {
+    padding: 0px;
+  }
+  .about-us-page h1 {
+    font-size: 1.8rem;
+  }
+  .about-us-page p {
+    font-size: 1.2rem;
+  }
+
+  .why-us-container.reverse {
+    
+    margin-left: 15px;
+  }
+  .why-us-text p {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    padding: 0;
+  }
+
+  .why-us-image img {
+    /* max-width: 100%; */
+    width: 59%;
+  }
+  .why-us-image.second .dotted-pattern {
+    width: 60px; /* Smaller size for smaller screens */
+    height: 60px;
+    bottom: -10px;
+    left: -10px;
+}
+.message-chairman-section {
+  padding: 35px 12px;
+  justify-content: center;
+}
+.message-chairman p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.message-chairman h2{
+  font-size: 1.9rem;
+}
+}
+@media (max-width:480px) {
+  
+  .about-us-page {
+    position: absolute;
+    /* top: 44%;
+    left: 20%; */
+   
+  }
+  .about-us-section-bg {
+    height: 270px;
+  }
+  .why-us-container.reverse {
+    flex-direction: column;
+    margin: 0;
+  }
+  .about-us-page h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }  
+.about-us-page p {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+  
+  
+  
+  .why-us-text h3 {
+    font-size: 1.2rem;
+  }
+  .why-us-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin: 0;
+  }
+  .why-us-image img {
+    width: 60%
+  }
+  .why-us-text {
+    padding: 0;
+  }
+  .message-chairman h2 {
+    font-size: 1.5rem;
+  }
+  .message-chairman-section {
+    padding: 25px 15px;
+    margin: 0;
+
+  }
+  .message-chairman p {
+    font-size: 0.9rem;
+  }
+ 
+  .placement-item-cc {
+    padding: 15px;
+  }
+  
+}

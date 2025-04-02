@@ -1,0 +1,2574 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Slabo 27px', sans-serif;        
+    }  
+
+    /* loding spinner  */
+    .logo {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        width: 30%;
+        }
+
+    .logo img { 
+        width: 40%;
+    }
+.scrollcolor{
+   
+    position: fixed;
+    width: 99.5%;
+    margin: auto;
+    color: white;
+    top: 0;
+    z-index: 999;
+   background-color: lightskyblue;
+}
+
+.scrollcolor .onlineAddmissionbtn{
+    
+   background-image: none;
+   background-color: #BB2D3B;
+   color: white;
+
+}
+
+.scrollcolor .meanu-list ul li a{
+    color: rgb(75, 55, 55);
+}
+.social-media-logos a svg{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    
+
+    .logo-meanu-list {
+        display: flex;
+        gap: 4%;
+        width: 60%;
+    }
+
+    .meanu-list {
+        display: flex;
+        align-items: center;
+        width: 47%;
+    }
+
+    .meanu-list ul {
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .meanu-list ul li {
+        list-style: none;
+    }
+
+    .nav-bar {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-list {
+        width: 30%;
+
+        ul {
+            list-style: none;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        li {
+            text-decoration: none;
+        }
+    }
+
+    /* .icons{
+        width: 10%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+    } */
+
+    /* .icons ul li a {
+        color: gray;
+        font-size: 1.5rem;
+    }
+
+    .icons ul li a:hover {
+        color: #555;
+    } */
+
+
+    /* Default Navbar */
+
+    .main-top-class {
+    
+        width: 99.5%;
+
+        /* Apply blur only on the background */
+
+      
+
+    }
+    .info-top{
+    
+    background-color: lightskyblue;
+       
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media-logos{        
+        display: flex;        
+    }
+
+
+    .social-media-logos {   
+     list-style: none;
+     width: 10%;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     padding: 3px;
+     gap: 10px;
+     margin-left: 20px;      
+    }
+
+    .social-media-logos div{    
+        display: flex;
+    }
+
+    .social-media-logos  img{     
+        width: 100%;
+    }
+    .call-email{
+        align-items: center;   
+        justify-content: space-around;
+        width: 80%;      
+        display: flex;
+    }
+
+    .call-email li {
+        font-weight: 100;
+        font-size: small;
+        list-style: none;
+        color: white;
+    }
+
+    .online-addimission-top{
+       padding: 5px;
+        display: flex;
+        width: 50%;     
+    }
+
+    .online-addimission-top button{
+        background-color: white;
+        padding: 5px;
+        color: black;
+        border: none;
+        border-radius: 3px;
+    }
+    .nav-bar-main-class {
+        margin: auto;
+        height: 50px;
+        justify-content: space-between;
+        display: flex;
+        padding: 10px;
+    }
+
+    a{
+        list-style: none;
+    }
+    .meanu-list ul li a {
+        color:black;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .button-main{
+        display: flex;
+    }
+
+    .buttons {
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    .onlineClassbtn {       
+        color: white;
+        border-radius: 5px;       
+        border: 1px solid blue;
+        transition: transform 0.3s ease;
+    }
+
+    .onlineAddmissionbtn{
+       background-color: #D5161B;
+        padding: 12px 11px;      
+        color: white;
+        border-radius: 5px;
+        border: none;
+        transition: transform 0.5s ease;
+    }
+
+    .onlineClassbtn:hover {
+        transform: scale(1.1);
+    }
+
+    .onlineAddmissionbtn:hover {
+        transform: scale(1.1);
+    }
+
+    .btn-hamburger {
+        display: none;
+        background-color: white;
+        color: #7054E6;
+        border-radius: 5px;
+        padding: 4px;
+        border: 1px solid white;
+        transition: transform 0.5s ease;
+    }
+
+    /* marque ad */
+    .ad {
+        background-color: #91282b;
+        box-sizing: border-box;
+        color: #fff;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+
+    /* Sidebar */
+    .sidebar {
+       
+        position: fixed;
+        top: 0;
+        right: 0;        
+        height: auto; /* Change from 100vh to auto */
+        max-height: 100vh; /* Ensures it doesn't overflow the screen */
+        background-color: rgba(87, 84, 84, 0.9);
+        color: white;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+        overflow-y: auto; /* Enable scrolling inside sidebar */
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar li {
+        display: none;
+        margin-top: 10px;
+        line-height: 2;
+        padding: 10px;
+    }
+
+    .sidebar li a {
+
+        text-decoration: none;
+        font-size: bolder;
+        color: white;
+    }
+
+    .backdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;        
+        background-color: rgba(3, 3, 3, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    .cancle li {
+        color: white;
+        font-size: 20px;
+    }
+
+    /* navbar end */
+
+    /* home start */
+    .main-content {
+        border: 2px solid #F1F7F7;
+        background-color: #F1F7F7;
+    }
+
+    .top-content {
+        width: 85%;
+        margin: 5% auto;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .poster1 img {
+        border-radius: 10px;
+        height: 170px;
+    }
+
+    .poster2 img {
+        height: 170px;
+    }
+
+    .poster3 img {
+        height: 170px;
+    }
+
+    .poster4 img {
+        height: 170px;
+    }
+
+    .left {
+        gap: 15px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .right {
+        gap: 15px;
+        display: flex;
+    }
+
+    /* heading */
+
+    /* top content */
+
+    .top-left-content {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .heading {
+        width: 85%;
+
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: -0.01em;
+            color: #3C4852;
+        }
+
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #3C4852;
+        }
+    }
+
+    .enquiry {
+        .btn {
+            font-size: 20px;
+            background-color:#BB2D3B ;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            width: 85%;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #D5161B;
+        }
+    }
+
+    .text {
+        color: #BB2D3B;
+        }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .poster1 img,
+    .poster2 img,
+    .poster3 img,
+    .poster4 img {
+        animation: fadeIn 1.5s ease-out;
+        border-radius: 10px;
+        /* height: 170px; */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hover effect */
+    .poster1 img:hover,
+    .poster2 img:hover,
+    .poster3 img:hover,
+    .poster4 img:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    .left,
+    .right {
+        gap: 15px;
+        display: flex;
+    }
+
+    .sidebar img {
+        filter: blur(2px);
+    }
+
+    .top-content .left .poster1 img,
+    .top-content .right .poster1 img {
+        height: 170px;
+    }
+
+    /* cards css */
+    /* Main Card Container */
+    .card-container {
+
+        background-color: #F1F7F7;
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4%;
+    }
+
+    .seemore-btn{
+        cursor: pointer;
+        background-color: #91282B;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 800;
+        width: 20%;
+        border-radius: 5px;
+    }
+
+    /* Grid Container for Cards */
+    .main-cards-container {
+
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Responsive grid */
+        gap: 20px;
+        /* Space between cards */
+        align-items: stretch;
+        /* Ensures equal height */
+        row-gap: 5%;
+    }
+
+    /* Individual Cards */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Ensures button stays at the bottom */
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        /* transition: transform 0.3s ease, opacity 0.3s ease; */
+        background-color: white;
+    }
+
+    .images:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    /* Image Styling */
+    .images {
+        width: 100%;
+        /* height: 200px; */
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Content Inside Cards */
+    .content {
+        flex-grow: 1;
+        /* Ensures content stretches */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content h2 {
+        font-size: 16px;
+        color: #BB2D3B;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+
+    .content p {
+        color: #7A7A7A;
+        text-align: justify;
+        margin-top: 10px;
+        flex-grow: 1;
+        /* Makes sure text stretches evenly */
+    }
+
+    /* Button Styling */
+    .btn-en {
+        margin-top: auto;
+        /* Pushes button to bottom */
+        border: none;
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+        background-color: #BB2D3B;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .btn-en:hover {
+        opacity: 0.8;
+    }
+
+
+
+    .categories {
+        padding: 0% 0% 2% 0%;
+        margin: 2% 0% 0% 0%;
+        background-color: #F1F7F7;
+        margin-bottom: 10px;
+    }
+
+    .categories-icon {
+
+        width: 85%;
+        margin: auto;
+    }
+
+    .heading-content {
+        text-align: center;
+        line-height: 2;
+        width: 85%;
+        margin: auto;
+        padding: 30px;
+
+        p {
+
+            font-weight: bold;
+            font-size: 2rem;
+            color:#91282B;
+        }
+
+        h1 {
+            font-size: 20px;
+            ;
+        }
+
+
+    }
+
+    .course-button-enroll{
+        background-image: none !important;
+        background-color:#91282b !important;
+    }
+
+    .icon-with-text {
+        background-color: white;
+        width: 100px;
+        border-radius: 100%;
+        padding: 17px;
+        text-align: center;
+        border: 2px solid lightskyblue;
+
+
+    }
+
+    .icon-with-text p {
+        font-size: 15px;
+        font-weight: 100;
+    }
+
+    .icon-with-text {
+        transition: transform 0.3s ease;
+    }
+
+    .icon-with-text:hover {
+        transform: scale(1.2);
+        /* Image zoom effect */
+    }
+
+
+    .icon-with-text img {
+        transition: transform 0.3s ease;
+        /* Smooth transition for image zoom */
+    }
+
+    .icon-with-text:hover img {
+        transform: scale(1.2);
+        /* Image zoom effect */
+    }
+
+    .icon-with-text img {
+
+        height: 54px;
+
+
+    }
+
+    .categories-icons-image {
+
+        justify-content: space-between;
+        display: flex;
+
+    }
+
+    .categories-heading-content {
+        text-align: center;
+        line-height: 2;
+        width: 85%;
+        margin: auto;
+        padding: 30px;
+
+        p {
+
+            font-weight: bold;
+            font-size: 2rem;
+            color: #91282b;
+         
+            
+        }
+
+        h1 {
+            font-size: 20px;
+            ;
+        }
+
+
+    }
+
+    .image-section {
+
+        display: flex;
+        width: 50%;
+
+
+    }
+
+    .image-section img {
+
+        height: 80%;
+
+
+    }
+
+    /* counter css  */
+    .counter-group {
+        margin: 2% 0% 2% 0%;
+        display: flex;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: lightskyblue;
+        padding: 20px;
+        color: black;
+
+    }
+
+    .counter-item {
+        text-align: center;
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .counter-item:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .counter-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .counter-label {
+        margin: 10px 0 0;
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+
+    .counter-item p {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .counter-item {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* more about us section css */
+
+    .outer-class-aboutUs {
+        margin: 2% 0% 0% 0%;
+        background-color: #F1F7F7;
+
+    }
+
+    .inner-class-aboutUs {
+
+        width: 85%;
+        margin: auto;
+    }
+
+    .main-content-class {
+        display: flex;
+        padding: 5% 0% 0% 0%;
+        gap: 6%;
+
+    }
+
+
+  .seemore-course{
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+    display: flex
+;
+  }
+     .row .image-section {
+
+        /* border: 2px solid red; */
+       
+    }
+
+    .row .image-section img{
+     
+        width: 100%;
+        height: 100%;
+    }
+
+   
+
+    .cols .image-section img{
+        
+        width: 100%;
+        height: 90%;
+    }
+
+
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 50%;
+        text-align: justify;
+
+        p {
+            
+            width: auto;
+            line-height: 1.3;
+        }
+
+        h1 {
+            color: #D5161B;
+        }
+
+
+    }
+
+    .knowMorebtn {
+        gap: 14px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        background-image: linear-gradient(to right, #9752ff, #5e93ff);
+        color: white;
+        width: 30%;
+        padding: 10px;
+
+    }
+
+    .icons {
+        height: 16px;
+    }
+
+    /* .icons{
+        margin-top: 4px;
+    } */
+    /*  enquiryNow form */
+
+
+    .top-enquiry-div {
+
+        width: 85%;
+        margin: 5% auto;
+    }
+
+    .top-enquiry-div hr {
+        border: 1px solid blue;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .enquiry-now-heading h1 {
+        color: #7061E9;
+    }
+
+
+    .img-enquiry-div img {
+        width: 97%;
+        margin-left: 20px;
+
+
+    }
+
+    .img-enquiry-div {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .content-enquiry-div {
+        width: 50%;
+    }
+
+    .main-enquiry-div {
+
+        gap: 40px;
+        margin-top: 30px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .name,
+    .data,
+    .options {
+        display: flex;
+        gap: 20px;
+
+
+
+    }
+
+    .form-content-enquiry-div form input {
+        border: 2px solid blue;
+
+        margin-bottom: 20px;
+        width: 70%;
+        padding: 10px;
+
+
+    }
+
+    .form-content-enquiry-div form input text {
+        color: black;
+    }
+
+    .form-content-enquiry-div form select {
+        border: 2px solid blue;
+        margin-bottom: 20px;
+        width: 70%;
+        padding: 10px;
+    }
+
+
+    .form-content-enquiry-div form .text-area {
+        border: 2px solid blue;
+        width: 100%;
+        margin-top: 20px;
+
+    }
+
+    .btn-EnquiryNow {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        background-image: linear-gradient(to right, #9752ff, #5e93ff);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* css for online addmission from */
+    .online-addmission-form {
+
+
+        display: flex;
+
+        width: 85%;
+        margin: 30px auto;
+        align-items: center;
+    }
+
+    .heading-application {
+        width: 90%;
+        color: #7061E9;
+        margin: auto;
+    }
+
+    .heading-application hr {
+        border: 1px solid blue;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .image img {
+        width: 80%;
+    }
+
+    .form-online-addmission {
+        margin-top: 20px;
+
+        width: 50%;
+    }
+
+    .form-online-addmission input,
+    .form-online-addmission select {
+        border: 2px solid blue;
+        border-radius: 7px;
+        padding: 10px;
+        width: 43%;
+        /* Consistent width for both input and select */
+        margin-left: 30px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        /* Ensures padding doesn't affect width */
+    }
+
+    .online-addmissio-form-option {
+        margin-top: 10px;
+    }
+
+    .online-application-form {
+        margin-top: 20px;
+        margin-left: 29px;
+        width: 91%;
+        padding: 15px;
+        background-image: linear-gradient(to right, #9752ff, #5e93ff);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    /* placement categories */
+    .placement-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .placement-item-cc {
+        background: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 50px 20px 20px 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .placement-item-cc:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .placement-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .placement-item-cc h4 {
+        font-size: 18px;
+        color: #3C3097;
+        margin-bottom: 10px;
+    }
+
+    .placement-item-cc p {
+        font-size: 14px;
+        color: black;
+        line-height: 1.6;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+
+    /* ----------------------------------------------- footer------------------------------------------------- */
+
+    .top-feather {
+        margin: 2% 0% 0% 0%;
+        background-color: lightskyblue;
+
+    }
+
+    .feather-imside-width {
+    
+        margin-top: 2%;
+        display: flex;
+        width: 85%; 
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    .top-feather img {
+        height: 80px;
+    }
+
+    .feathers-images {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .fether-content p {
+        color: white;
+        width: 80%;
+        align-items: center;
+        margin: auto;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .feathers-images:hover {
+        transform: scale(1.2);
+    }
+
+    .feathers-images {
+        transition: transform 0.3s ease;
+        /* Smooth transition for image zoom */
+    }
+
+    .top-feather p {
+        transition: transform 0.3s ease;
+    }
+
+    .main-video {
+        width: 50%;
+    }
+
+
+    .video-section {
+        justify-content: space-between;
+        width: 85%;
+        display: flex;
+        margin: 2% auto 2% auto;
+    }
+
+    .video-content {
+        width: 40%;
+
+        margin-left: 20px;
+
+        border-radius: 10px;
+    }
+
+    .video-content h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 12px;
+        margin-left: 20px;
+        color: #7054E6;
+    }
+
+    .content-list {
+        list-style: none;
+        /* Removes default bullet points */
+        padding: 0;
+    }
+
+    .content-list li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        /* Aligns check icon with text */
+        color: #555;
+    }
+
+    .check-icon {
+        color: #28a745;
+        /* Green check icon */
+        font-weight: bold;
+        margin-right: 10px;
+        /* Adds spacing between icon and text */
+    }
+
+
+    .main-video-class {
+        background-color: #F1F7F7;
+        margin-top: 2%;
+        border: 2px solid #F1F7F7;
+    }
+
+
+    /* footer section */
+
+    /* footer section */
+
+
+
+    .section_padding {
+        padding: 10px 15px 63px 15px;
+    }
+
+    .footer {
+
+        background-color: lightskyblue;
+      
+        color: #91282b;
+
+    }
+
+    .sb_footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sb_footer-links {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+  
+ .in{
+    margin-bottom: 15px;
+ }
+
+ 
+
+    .socialmedia {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;       
+        justify-content: center;   
+        align-items: center;
+      
+
+    }
+
+    .divider{
+
+        margin-top: 30px;
+
+    }
+
+    .socialmedia img {
+        width: 30px;
+        /* Adjust size of the icons */
+        height: 30px;
+        /* Ensures consistent size */
+        cursor: pointer;
+        border-radius: 100%;
+    }
+   
+
+    .sb_footer-links_div h4 {
+        font-size: 20px;
+        line-height: 17px;
+        margin-bottom: 0.9rem;
+        margin-left: 5px;
+
+    }
+
+    .page-links{
+        
+        width: 50%;
+       
+
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .page-links ul{        
+        gap: 10px;        
+        text-decoration: none;
+        color: white;       
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);        
+        margin-top: 10px;
+        
+    }
+
+
+    .page-links ul li{
+        
+        list-style: none;
+    }
+
+    .page-links ul li a{    
+        list-style: none;
+        color: rgb(75, 55, 55);
+    }
+
+   
+
+   
+
+    .sb_footer-links_div p:hover::after {
+        width: 100%;
+        /* Full underline width on hover */
+    }
+
+    .contact_details h4 {
+        font-size: 20px;
+        line-height: 17px;
+        margin-bottom: 0.9rem;
+        margin-left: 5px;
+    }
+
+    .contact_details p {
+        font-size: 16px;
+        margin-top: 7px;
+        margin-left: 5px;
+        color: rgb(75, 55, 55);
+        width: 100%;
+        line-height: 1.3;
+    }
+
+    .sb_footer-below {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.3rem;
+
+    }
+
+    .sb_footer-below-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    hr {
+        color: white !important;
+        width: 100%;
+    }
+
+    .sb_footer-copyright p {
+        margin-top: 10px;
+        font-size: 14px;
+        /* align-items: center; */
+        line-height: 14px;
+        color: rgb(75, 55, 55);
+        font-weight: 600;
+        /* text-align: justify; */
+    }
+
+    @media (min-width: 1920px) and (max-width: 2560px) {
+
+        .meanu-list ul li {
+            font-size: 1.5rem;
+        }
+
+        .onlineAddmissionbtn {
+            font-size: 20px;
+        }
+
+        .top-content {
+            width: 89%;
+        }
+
+        .heading {
+            h1 {
+                font-size: 2rem;
+            }
+
+        }
+
+        .heading {
+            p {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .top-left-content {
+            justify-content: center;
+        }
+
+        .top-content .left .poster1 img,
+        .top-content .right .poster1 img {
+            height: 220px;
+        }
+
+        .icon-with-text {
+            width: 200px;
+        }
+
+        .icon-with-text img {
+            height: 150px;
+        }
+
+        .icon-with-text p {
+            font-size: 18px;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+        }
+
+        .top-feather img {
+            height: 130px;
+        }
+
+        .fether-content p {
+            font-size: 28px;
+        }
+
+        .content-section {
+
+            width: 50%;
+        }
+
+        .main-content-class {
+            justify-content: space-around;
+        }
+
+        .content-section {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+
+        .content-section {
+
+            p {
+                font-size: 1.6rem;
+            }
+
+
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1024px) {
+     
+        .top-content .left .poster1 img,
+        .top-content .right .poster1 img {
+            height: 131px;
+        }
+
+        .heading h1 {
+            font-size: 1.9rem;
+            line-height: 2rem;
+        }
+
+        .enquiry {
+            .btn {
+                font-size: 14px;
+                padding: 10px;
+                width: 80%;
+
+            }
+        }
+
+        .main-cards-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .main-content-class {
+            align-items: center;
+
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .content-section {
+            width: 100%;
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                width: 100%;
+                margin: auto;
+                font-size: 20px;
+            }
+        }
+
+        .image-section {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .row {
+
+            flex-direction: column-reverse;
+
+        }
+
+        .image-section img {
+            margin-top: 10%;
+        }
+
+        .icon-with-text {
+            width: 66px;
+        }
+
+        .icon-with-text img {
+            height: 42px;
+        }
+
+        .icon-with-text p {
+            font-size: 10px;
+        }
+
+        .main-cards-container {
+            row-gap: 4%;
+            padding-bottom: 8%;
+        }
+
+        .poster .text {
+
+            left: 50%;
+        }
+        .course-box-content {
+            width: 90%;
+        }
+
+        .main-containet-course{
+            gap: 20px;
+          flex-direction:row-reverse;
+        }
+        .course-content h1{
+            color: #91282b;
+            font-size: 1.5rem;
+        }
+
+        .course-video{
+           
+            width: 50%;
+        }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    @media only screen and (min-width:760px) and (max-width: 1010px) {
+
+        /* .logo{
+            border: 2px solid red;
+            width: 100%;
+        } */
+
+        .logo{
+            width: 10%;
+        }
+        .logo img{
+            width: 100%;
+        }
+        .meanu-list ul {
+
+            font-size: 15px;
+
+        }
+
+        .logo-meanu-list {
+            width: 70%;
+        }
+
+        .nav-bar-main-class {
+            padding: 9px;
+        }
+        
+        .meanu-list {
+            display: block;
+            width: 60%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .onlineAddmissionbtn {
+
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+        .top-content {
+
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+
+        .top-left-content {
+
+            align-items: center;
+        }
+
+        .enquiry {
+            width: 85%;
+        }
+
+        .enquiry .btn {
+
+            width: 100%;
+        }
+
+        .categories-icons-image {
+
+            justify-items: center;
+
+            text-align: center;
+            row-gap: 5%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .icon-with-text {
+            border: 2px solid black;
+        }
+
+        .main-cards-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .content h2 {
+            font-size: 13px;
+        }
+
+        .main-content-class {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .categories {
+            height: 684px;
+        }
+
+        .content-section {
+            width: 100%;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        .content-section img {
+            height: 50px;
+        }
+
+        .content-section p {
+            margin: auto;
+            width: 85%;
+
+        }
+
+        .row {
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .image-section {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            height: 350px;
+        }
+
+        .main-cards-container {
+            row-gap: 4%;
+            padding-bottom: 15%;
+        }
+
+        /*  online addmission form  */
+
+        .online-addmission-form {
+
+            flex-direction: column;
+
+
+        }
+
+        .image {
+            width: 70%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .form-online-addmission {
+            width: 70%;
+        }
+
+        .heading-application h1 {
+
+            font-size: 1.1rem;
+
+        }
+
+        .form-online-addmission input,
+        .form-online-addmission select {
+            align-items: center;
+
+            justify-items: center;
+            width: 40%;
+            margin-left: 28px;
+
+        }
+
+        .online-application-form {
+            margin-left: 30px;
+            padding: 12px;
+            font-size: 14px;
+            width: 86%;
+
+        }
+
+        .heading-application hr {
+            width: 96%;
+        }
+
+        .poster .text {
+
+            left: 50%;
+        }
+
+        .placement-container {
+
+            grid-template-columns: repeat(2, 2fr);
+        }
+
+    }
+
+    @media (min-width: 600px) and (max-width: 765px) {
+      
+     
+       
+        .logo-meanu-list{
+            display: block;
+       
+            width: 20%;
+        }
+        .meanu-list ul{
+         
+            width: 100%;
+        }
+
+        .nav-bar-main-class {
+            padding: 9px;
+        }
+
+        .meanu-list {
+            display: block;
+            width: 100%;
+            align-items: center;
+            display: flex;
+       
+            justify-content: center;
+
+        }
+
+        .onlineAddmissionbtn {
+
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+        .top-content {
+
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+
+        .top-left-content {
+
+            align-items: center;
+        }
+
+        .enquiry {
+            width: 85%;
+        }
+
+        .enquiry .btn {
+
+            width: 100%;
+        }
+
+        .placement-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .categories-icons-image {
+
+            justify-items: center;
+            text-align: center;
+            row-gap: 5%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .icon-with-text {
+            border: 2px solid black;
+        }
+
+        .main-cards-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .content h2 {
+            font-size: 13px;
+        }
+
+        .main-content-class {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .categories {
+            height: 684px;
+        }
+
+        .content-section {
+            h1 {
+                text-align: center;
+            }
+        }
+
+        .content-section img {
+            height: 50px;
+        }
+
+        .content-section p {
+            margin: auto;
+            width: 85%;
+
+        }
+
+        .row {
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .image-section {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            height: 350px;
+        }
+
+        .main-cards-container {
+            row-gap: 4%;
+            padding-bottom: 15%;
+        }
+
+        /*  online addmission form  */
+
+        .online-addmission-form {
+
+            flex-direction: column;
+
+
+        }
+
+        .image {
+            width: 70%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .form-online-addmission {
+            width: 70%;
+        }
+
+        .heading-application h1 {
+
+            font-size: 1.1rem;
+
+        }
+
+        .form-online-addmission input,
+        .form-online-addmission select {
+            align-items: center;
+
+            justify-items: center;
+            width: 40%;
+            margin-left: 28px;
+
+        }
+
+        .online-application-form {
+            margin-left: 30px;
+            padding: 12px;
+            font-size: 14px;
+            width: 86%;
+
+        }
+
+        .heading-application hr {
+            width: 96%;
+        }
+
+
+        .top-feather img {
+            height: 51px;
+        }
+
+        .fether-content p {
+            font-size: 14px;
+        }
+
+    }
+
+
+    /* CSS rules */
+
+
+
+
+    @media only screen and (max-width:600px) {
+            
+        .social-media-logos{
+            padding: 2px;
+            width: 30%;
+          
+        }
+
+    .hamburger{
+        border: 1px solid blue;
+        display: flex;
+    }
+   
+   .heading h1 {
+  
+    width: 100%;
+   }
+  
+   .logo img{
+    width: 100%;
+    }
+    .placement-container {
+            grid-template-columns: repeat(1, 2fr);
+    }
+
+        .meanu-list ul li {
+            
+            display: none;
+            list-style: none;
+         
+        }
+
+        .sidebar li {
+            
+            overflow-y: auto;
+            font-size: 25px;
+            margin: auto;         
+            width: 80%;           
+            display: block;
+        }
+
+       
+
+        .backdrop {
+           
+            display: block;
+            z-index: 4;
+            width: 100%;
+        }
+
+        .poster {
+            height: 300px;
+        }
+
+        .poster img {
+            width: 100%;
+            height: auto;
+        }
+
+        .poster .text {
+
+
+            font-size: 1.3rem;
+
+        }
+
+        
+
+        .sidebar {
+          
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 100%;
+            justify-content: start;
+          
+          
+        }      
+    
+        .top-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .poster1 img {
+            display: none;
+        }
+        .heading h1 {
+            font-size: 1.9rem;
+            line-height: 1;
+        }
+        .heading p {
+            margin-top: 2%;
+        }
+        .enquiry .btn {
+            padding: 3px;
+            font-size: 20px;
+        }
+        .onlineAddmissionbtn {
+            font-size: 10px;
+            padding: 5px;
+            display: block;
+        }
+        .main-cards-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* categories responsiveness */
+        .categories {
+            padding-bottom: 9%;
+        }
+
+        .categories-heading-content {
+            p {
+                text-align: center;
+
+                line-height: 1;
+                font-size: 1.4rem;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: 10px;
+                line-height: 1;
+                font-size: 1rem;
+
+            }
+
+        }
+        .btn-en {
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .categories-icons-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .heading-content p {
+            font-size: 1.4rem;
+        }
+        .content-section {
+            width: 100%;
+        }
+        .heading-content h1 {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        .feather-imside-width {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feathers-images {
+            display: flex;
+            flex-direction: column;
+        }
+        .fether-content p {
+            text-align: center;
+        }
+        .main-content-class {
+            align-items: center;
+            display: flex;
+        }
+        .image-section img {
+            margin-top: 10%;
+            height: 234px;
+        }
+        .knowMorebtn {
+            margin-top: 10%;
+            width: 100%;
+        }
+        .main-content-class {
+            width: 100%;
+            h1 {
+                margin-top: 2%;
+                color: #7054E6;
+                text-align: center;
+            }  
+              }
+
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-hamburger {
+            display: block;
+            padding: 7px;
+        }
+
+        .main-cards-container {
+            gap: 24px;
+        }
+
+        /* onle addmission form css */
+        .online-addmission-form {
+
+            flex-direction: column;
+
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .form-online-addmission {
+            width: 100%;
+        }
+
+        .heading-application h1 {
+
+            font-size: 1.1rem;
+
+        }
+
+        .form-online-addmission input,
+        .form-online-addmission select {
+            width: 90%;
+            margin-left: 12px;
+
+        }
+
+        .online-application-form {
+            margin-left: 12px;
+            padding: 9px;
+            font-size: 14px;
+        }
+
+        .main-enquiry-div {
+
+            flex-direction: column-reverse;
+        }
+
+        .content-enquiry-div {
+            width: 100%;
+        }
+
+        /* about us container css  */
+
+        .content-section {
+            gap: 9px;
+        }
+
+        .main-content-class {
+
+            flex-direction: column-reverse;
+
+            h1 {
+                font-size: 1.8rem;
+                margin-top: 2%;
+                color: #7054E6;
+                text-align: start;
+            }
+        }
+
+        .row {
+
+            flex-direction: column;
+        }
+
+        /* about us css  */
+
+        .row .image-section img{
+            width: 200%;
+        }
+
+        .cols .image-section img{
+            width: 200%;
+        }
+        .name,
+        .data,
+        .options {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .options {
+
+            width: 100%;
+        }
+
+        .form-content-enquiry-div form select {
+            width: 98%;
+        }
+
+        .form-content-enquiry-div form input {
+            width: 90%;
+            margin-top: 0px;
+        }
+
+        .btn-EnquiryNow {
+            padding: 6px;
+            margin-top: 9px;
+            border-radius: 2px;
+        }
+
+        .img-enquiry-div {
+            width: 100%;
+        }
+
+        .img-enquiry-div img {
+            width: 100%;
+            margin: 0px;
+        }
+
+        /* counter  */
+        .counter-group {
+            display: grid;
+            grid-template-columns: repeat(2, 3fr);
+            height: 100%;
+
+        }
+
+        .counter-item {
+            margin-top: 10px;
+        }
+
+        .counter-number {
+            font-size: 1.6rem;
+        }
+
+        .counter-item p {
+            margin-top: 10px;
+        }
+
+        .counter-item:not(:last-child) {
+            border: none;
+        }
+        .info-top{
+          
+            flex-direction: column;
+        }
+        .online-addimission-top{
+            display: none;
+        }
+        .call-email{
+           padding: 10px;
+            gap: 10px;
+            align-items: start;
+            width: 90%;
+            
+            font-size: 12px;
+        }
+
+        .sb_footer-links{
+            gap: 2%;
+            flex-direction: column;
+        }
+       
+        .page-links ul{
+            grid-template-columns: repeat(1 , 1fr);
+        }
+        .sb_footer-links div{
+            width: 100%;
+        }
+    }
+
+  
+
+  
+
+
+    @media only screen and (max-width:380px) {
+      
+
+        .poster {
+            height: 200px;
+        }
+
+        .poster img {
+            width: 100%;
+            height: auto;
+        }
+
+        .poster .text {
+
+
+            font-size: 1.3rem;
+        }
+
+        /* side bar */
+
+        .sidebar ul {
+            z-index: 5;
+        }
+
+        .sidebar li {
+
+
+            display: block;
+        }
+
+      
+
+        .heading h1 {
+
+            font-size: 1.4rem;
+
+        }
+
+        .heading {
+            text-align: center;
+            width: 100%;
+        }
+
+        .heading p {
+            margin-top: 5%;
+        }
+
+        .heading-content {
+            width: 80%;
+        }
+
+        .heading-content p {
+            text-align: center;
+
+            line-height: 1;
+            font-size: 1.4rem;
+        }
+
+        .heading-content h1 {
+            line-height: 1;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .btn-en {
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 4px;
+            font-size: 15px;
+        }
+
+        .onlineAddmissionbtn {
+
+            font-size: 10px;
+            display: block;
+
+        }
+
+        .btn-hamburger {
+            visibility: visible;
+            background-color: white;
+            color: #7054E6;
+            border-radius: 5px;
+            padding: 7px;
+            border: 1px solid white;
+            transition: transform 0.5s ease;
+        }
+
+        .onlineClassbtn {
+            padding: 5px;
+            display: none;
+        }
+
+        .main-cards-container {
+            gap: 24px;
+        }
+
+        .categories-heading-content {
+            width: 81%;
+
+            p {
+                text-align: center;
+
+                line-height: 1;
+                font-size: 1.2rem;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+        }
+
+        /* about us container css  */
+
+        .content-section {
+            gap: 9px;
+        }
+
+        .placement-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .main-content-class {
+
+            flex-direction: column-reverse;
+
+
+            h1 {
+
+                font-size: 1.8rem;
+                margin-top: 2%;
+                color: #7054E6;
+                text-align: start;
+            }
+        }
+
+        .row {
+
+            flex-direction: column;
+        }
+
+        /* about us css end */
+
+        .image-section img {
+            margin-top: 10%;
+            height: 180px;
+        }
+
+        /* online addmission form css */
+
+        .online-addmission-form {
+
+            flex-direction: column;
+
+        }
+
+        .enquiry .btn {
+            border-radius: 3px;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .image {
+            width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .form-online-addmission {
+            width: 100%;
+        }
+
+        .heading-application h1 {
+
+            font-size: 1.1rem;
+
+        }
+
+        .form-online-addmission input,
+        .form-online-addmission select {
+            width: 90%;
+            margin-left: 12px;
+
+        }
+
+        .online-application-form {
+            margin-left: 12px;
+            padding: 9px;
+            font-size: 14px;
+        }
+
+        /* enquiry now css */
+        .main-enquiry-div {
+
+            flex-direction: column-reverse;
+        }
+
+        .content-enquiry-div {
+            width: 100%;
+        }
+
+
+        .name,
+        .data,
+        .options {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .options {
+
+            width: 100%;
+        }
+
+        .form-content-enquiry-div form select {
+            width: 98%;
+        }
+
+        .form-content-enquiry-div form input {
+            width: 90%;
+            margin-top: 0px;
+        }
+
+        .btn-EnquiryNow {
+            padding: 6px;
+            margin-top: 9px;
+            border-radius: 2px;
+        }
+
+        .img-enquiry-div {
+
+
+            width: 100%;
+
+        }
+
+        .img-enquiry-div img {
+            width: 100%;
+            margin: 0px;
+        }
+
+        /* counter  */
+        .counter-group {
+            display: grid;
+            grid-template-columns: repeat(1, 3fr);
+            height: 100%;
+
+        }
+
+        .counter-item {
+            margin-top: 10px;
+        }
+
+        .counter-number {
+            font-size: 1.6rem;
+        }
+
+        .counter-item p {
+            margin-top: 10px;
+        }
+
+        .counter-item:not(:last-child) {
+            border: none;
+        }
+
+
+
+    }
