@@ -38,8 +38,8 @@ function OnlineAddmissionForm() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(onlineAddmissionFomData),
-                mode: "cors"
+                body: JSON.stringify(onlineAddmissionFomData)
+            
             });
 
             if (response.ok) {
