@@ -29,7 +29,7 @@ function Home() {
         <div className='top-content'>
         <div className='top-left-content'>
         <div className='heading'>
-        <h1>Reach your aspirations alongside  <span className='text'> India's top </span> educators</h1>
+        <h1>Reach your aspirations alongside  <span className='text'> India's  </span> educators</h1>
         <p>Over <b className='text'> 1 lakhs </b>  learners trust us for their preparation</p>
 
         </div>
