@@ -9,7 +9,7 @@ function Card({id, title, description, image }) {
  
   const nevigate = useNavigate();
   function  detailhandler(){
-   
+  //  console.log("button is clicked")
     // console.log(cardDetails)
     nevigate(`/details/${id}`);
     

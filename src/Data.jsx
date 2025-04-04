@@ -57,6 +57,7 @@ const Data = [
                        pointFive: "Enhance your employability by participating in workshops focused on resume building, interview techniques, and personal grooming, ensuring you are job-ready in the competitive hospitality industry."
 }
     },
+
     {
       id: 4,
       image:shipment,
@@ -73,6 +74,7 @@ const Data = [
 }
 
   },
+
   {
     id: 5,
     image: finc, // Change to a relevant financial image if needed
@@ -102,6 +104,7 @@ const Data = [
       pointFive: "Develop strong customer service and communication skills, which are critical in managing passenger relations and creating positive travel experiences."
   }
 },
+
 {
 id: 7,
 image: mass, // Replace with a relevant Mass Communication image if needed

@@ -449,58 +449,61 @@
     }
 
     /* cards css */
-    /* Main Card Container */
-    .card-container {
 
+    .cards{
+        width: 100%;
+        padding: 10px;
+        height: 500px;
+        display: flex;
+
+    }
+    /* Main Card Container */
+
+    .card-container {
+       
+        
         background-color: #F1F7F7;
         padding: 10px 0px 10px 0px;
-        width: 100%;
-        display: flex;
+        width: 100%;        
         flex-direction: column;
         padding-bottom: 4%;
     }
 
-    .seemore-btn{
-        cursor: pointer;
-        background-color: #91282B;
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: 800;
-        width: 20%;
-        border-radius: 5px;
-    }
 
-    /* Grid Container for Cards */
-    .main-cards-container {
-
-        width: 85%;
-        margin: auto;
+    .main-cards-container{
+    
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        /* Responsive grid */
-        gap: 20px;
-        /* Space between cards */
-        align-items: stretch;
-        /* Ensures equal height */
-        row-gap: 5%;
+        height: 1700px;
+        flex-wrap: wrap;
+        row-gap: 0px;
+        column-gap: 4%;
+        padding: 10px;
+        width: 85%;
+        margin: auto;
+        
     }
+
+    .seemore-course{
+        justify-content: center;
+        display: flex;
+   
+        margin: auto;
+        width: 20%;
+    }
+
+    .seemore-btn{
+        border: none;
+        padding: 10px;
+        width: 89%;
+        font-size: 1.2rem;
+        background-color: #91282B;
+        color: white;
+    }
+  
 
     /* Individual Cards */
-    .cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* Ensures button stays at the bottom */
-        height: 100%;
-        border-radius: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        /* transition: transform 0.3s ease, opacity 0.3s ease; */
-        background-color: white;
-    }
-
+  
     .images:hover {
         transform: scale(1.05);
         opacity: 0.9;
@@ -573,6 +576,7 @@
     }
 
     .heading-content {
+    
         text-align: center;
         line-height: 2;
         width: 85%;
@@ -768,11 +772,15 @@
 
 
   .seemore-course{
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     margin-top: 17%;
-    display: flex
-;
+    display: flex */
+
+    /* border: 2px solid red;
+    width: 100%;
+    position: absolute; */
+
   }
      .row .image-section {
 
@@ -1428,7 +1436,10 @@
         .main-cards-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            row-gap: 4%;
+            padding-bottom: 8%;
             gap: 15px;
+            height: 100%;
         }
 
         .main-content-class {
@@ -1485,10 +1496,7 @@
             font-size: 10px;
         }
 
-        .main-cards-container {
-            row-gap: 4%;
-            padding-bottom: 8%;
-        }
+      
 
         .poster .text {
 
