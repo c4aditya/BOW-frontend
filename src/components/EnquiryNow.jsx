@@ -55,7 +55,18 @@ function EnquiryNow() {
       if (response.ok) {
         console.log("The data is sent to the database");
         toast.success("Form submitted successfully!");
+        setEnquiryData({
+           firstName: "",
+           lastName: "",
+           email: "",
+           number: "",
+           gender: "",
+           course: "",
+           message: ""
+        });
+        
       } else {
+
         const errorData = await response.json(); // Get the error message from the backend
         toast.error(errorData.message || "Error while submitting form"); // Display backend error message
       }
@@ -65,15 +76,15 @@ function EnquiryNow() {
       toast.error("Something went wrong!");
     }
   
-    setEnquiryData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      number: "",
-      gender: "",
-      course: "",
-      message: ""
-    });
+    // setEnquiryData({
+    //   firstName: "",
+    //   lastName: "",
+    //   email: "",
+    //   number: "",
+    //   gender: "",
+    //   course: "",
+    //   message: ""
+    // });
   };
   
 
