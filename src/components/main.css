@@ -1,7 +1,9 @@
     * {
         padding: 0px;
         margin: 0px;
-        font-family: 'Slabo 27px', sans-serif;        
+       /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     */
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     }  
 
     /* loding spinner  */
@@ -453,7 +455,7 @@
     .cards{
         width: 100%;
         padding: 10px;
-        height: 500px;
+        height: 550px;
         display: flex;
 
     }
@@ -485,6 +487,7 @@
     }
 
     .seemore-course{
+        padding-top: 30px;
         justify-content: center;
         display: flex;   
         margin: auto;
@@ -2311,6 +2314,7 @@
 
     @media only screen and (max-width:380px) {
         .cards{
+          
             width: 100%;
         }
 
@@ -2587,6 +2591,7 @@
 
     @media only screen and (max-width:380px){
         .cards{
+            height: 650px;
             width: 90%;
         }
         .seemore-btn {
