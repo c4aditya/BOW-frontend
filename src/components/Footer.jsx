@@ -63,7 +63,7 @@ const Footer = () => {
             <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Nehru market gate-4, Greater Noida, 201301</p>
             {/* <p> Nehru market gate-4 </p> */}
             {/* <p> Greater Noida, 201301</p> */}
-            <p><MdCall /> +91 11111111111111</p>
+            <p><MdCall /> +91 8374908364</p>
 
 
           </div>
