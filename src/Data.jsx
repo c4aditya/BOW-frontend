@@ -23,7 +23,19 @@ const Data = [
     pointThree: "Develop problem-solving and analytical thinking skills to tackle complex IT challenges effectively.",
     pointFour: "Learn from industry professionals and receive mentorship to enhance your knowledge and career readiness.",
     pointFive: "Participate in resume-building workshops, interview preparation, and networking opportunities to boost your job prospects.",
+  },
+
+  CourseDetails :{
+    courseLevel :"Intermediate",
+    jobProfile:"NA",
+    Duration:"3-6 monts",
+    SalaryPackage:" 5 - 8 LPA",
+    mode:"online",
+    moreDetails:"singha1418@gmail.com"
   }
+
+  
+
 },
   
     {
@@ -41,6 +53,14 @@ const Data = [
         pointFive:"Take part in workshops on resume building, interview skills, and personal grooming to boost your confidence and improve your job readiness.",
 
 
+      },
+      CourseDetails :{
+        courseLevel :"Intermediate",
+        jobProfile:"NA",
+        Duration:"3-6 monts",
+        SalaryPackage:" 5 - 8 LPA",
+        mode:"online",
+        moreDetails:"singha1418@gmail.com"
       }
     },
     {
@@ -55,7 +75,17 @@ const Data = [
                        pointThree: "Learn the core aspects of managing food and beverage service, enabling you to work efficiently in various roles within the food and beverage sector.",
                        pointFour: "Gain a deep understanding of the hospitality industry's operations, empowering you to thrive in a fast-paced and dynamic food and beverage environment.",
                        pointFive: "Enhance your employability by participating in workshops focused on resume building, interview techniques, and personal grooming, ensuring you are job-ready in the competitive hospitality industry."
+},
+
+CourseDetails :{
+  courseLevel :"Intermediate",
+  jobProfile:"NA",
+  Duration:"3-6 monts",
+  SalaryPackage:" 5 - 8 LPA",
+  mode:"online",
+  moreDetails:"singha1418@gmail.com"
 }
+
     },
 
     {
@@ -71,6 +101,15 @@ const Data = [
     pointThree: "Develop exceptional customer service skills tailored to the unique cruise environment, enhancing passenger experiences throughout their journey.",
     pointFour: "Gain hands-on knowledge in cruise ship operations, including navigation, safety protocols, and daily activities, preparing you for a career onboard or in related sectors.",
     pointFive: "Participate in specialized workshops that enhance your resume-building, interview skills, and personal grooming, ensuring you are prepared for a successful career in cruise ship management."
+},
+
+CourseDetails :{
+  courseLevel :"Intermediate",
+  jobProfile:"NA",
+  Duration:"3-6 monts",
+  SalaryPackage:" 5 - 8 LPA",
+  mode:"online",
+  moreDetails:"singha1418@gmail.com"
 }
 
   },
@@ -87,6 +126,15 @@ const Data = [
         pointThree: "Develop hands-on experience with financial APIs, stock market data processing, and machine learning in finance.",
         pointFour: "Master data visualization techniques to interpret and present financial trends effectively.",
         pointFive: "Enhance your career opportunities in FinTech, investment banking, hedge funds, and data-driven finance roles."
+    },
+
+    CourseDetails :{
+      courseLevel :"Intermediate",
+      jobProfile:"NA",
+      Duration:"3-6 monts",
+      SalaryPackage:" 5 - 8 LPA",
+      mode:"online",
+      moreDetails:"singha1418@gmail.com"
     }
 },
 
@@ -102,6 +150,15 @@ const Data = [
       pointThree: "Learn essential safety protocols and emergency procedures that ensure passenger and crew safety in the aviation industry.",
       pointFour: "Enhance your understanding of aviation law, compliance standards, and best practices to excel in a regulated environment.",
       pointFive: "Develop strong customer service and communication skills, which are critical in managing passenger relations and creating positive travel experiences."
+  },
+
+  CourseDetails :{
+    courseLevel :"Intermediate",
+    jobProfile:"NA",
+    Duration:"3-6 monts",
+    SalaryPackage:" 5 - 8 LPA",
+    mode:"online",
+    moreDetails:"singha1418@gmail.com"
   }
 },
 
@@ -117,7 +174,17 @@ pointsMessages: {
     pointThree: "Master digital media production, including video editing, podcasting, and social media content creation.",
     pointFour: "Learn about media laws, advertising strategies, and crisis communication to excel in PR and corporate media roles.",
     pointFive: "Enhance your employability through workshops on resume building, interview preparation, and portfolio development."
+},
+
+CourseDetails :{
+  courseLevel :"Intermediate",
+  jobProfile:"NA",
+  Duration:"3-6 monts",
+  SalaryPackage:" 5 - 8 LPA",
+  mode:"online",
+  moreDetails:"singha1418@gmail.com"
 }
+
 },
 
 {
@@ -132,6 +199,15 @@ pointsMessages: {
       pointThree: "Gain hands-on experience in front desk operations, housekeeping management, and customer relationship handling.",
       pointFour: "Understand financial management, budgeting, and revenue optimization in hospitality businesses.",
       pointFive: "Enhance your career prospects with resume-building workshops, interview training, and industry networking opportunities."
+  },
+
+  CourseDetails :{
+    courseLevel :"Intermediate",
+    jobProfile:"NA",
+    Duration:"3-6 monts",
+    SalaryPackage:" 5 - 8 LPA",
+    mode:"online",
+    moreDetails:"singha1418@gmail.com"
   }
 },
 
@@ -148,6 +224,15 @@ pointsMessages: {
       pointThree: "Learn emergency response techniques, including CPR, first aid, and crisis management in medical settings.",
       pointFour: "Understand hospital procedures, infection control, and hygiene protocols to maintain a safe healthcare environment.",
       pointFive: "Enhance career prospects with practical clinical training, interview preparation, and resume-building workshops."
+  },
+
+  CourseDetails :{
+    courseLevel :"Intermediate",
+    jobProfile:"NA",
+    Duration:"3-6 monts",
+    SalaryPackage:" 5 - 8 LPA",
+    mode:"online",
+    moreDetails:"singha1418@gmail.com"
   }
 },
 
