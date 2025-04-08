@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import data from '../Data';
 import "../components/courseDetails.css";
 import { ToastContainer,toast } from 'react-toastify';
-
+import { useNavigate } from 'react-router-dom';
 function CourseDetails() {
     const { id } = useParams(); // Get the course id from the URL
     const course = data.find(course => course.id === parseInt(id)); // Find the matching course data
@@ -43,6 +43,14 @@ function CourseDetails() {
             }
 
         })
+    }
+    const nevigate = useNavigate()
+
+    function Go_to_Addmission(){
+        console.log("Click on the Enroll now button ")
+
+       
+        nevigate("/onlineform")
     }
 
     const submitHandler = async (event) => {
@@ -154,9 +162,9 @@ function CourseDetails() {
             <div className='top'>
                 <div className='course-details'>
                     <div className='course-details-content'>
-                        <div className='course-details-img'>
+                        {/* <div className='course-details-img'>
                             <img src={course.image} alt={course.title} style={{ height: "200px", objectFit: "cover" }} />
-                        </div>
+                        </div> */}
                         <div className='course-details-heading'>
                             <h1>{course.title}</h1>
                         </div>
@@ -175,8 +183,51 @@ function CourseDetails() {
                             <li>{course.pointsMessages.pointFive}</li>
                         </div>
                     </div>
+                    <div className='fee-btn'>
+                    <div className='course-details-img'>
+                            <img src={course.image} alt={course.title} style={{ height: "200px", objectFit: "cover" }} />
+                        </div>
+                    <div className='feeStructure'>
 
-                    <div className='form'>
+                        <div className='fee_structure_list_heading'>
+
+                            <ul>
+                                <li>Course Level :</li>
+                                <li>Job Profile :</li>
+                                <li>Duration :</li>
+                                <li>Salary Package :</li>
+                                <li>Mode :</li>
+                                <li>For More Detail :</li>
+
+                            </ul>
+
+                            </div>
+
+                            <div className='fee_structure_list_data'>
+                                
+
+                            <ul>
+
+                                <li>{course.CourseDetails.courseLevel }</li>
+                                <li>{course.CourseDetails.jobProfile}</li>
+                                <li>{course.CourseDetails.Duration}</li>
+                                <li>{course.CourseDetails.SalaryPackage}</li>
+                                <li>{course.CourseDetails.mode}</li>
+                                <li>{course.CourseDetails.moreDetails}</li>
+
+                            </ul>
+
+                        </div>
+                       
+                        </div>
+                        <div className='enrollNow-admission-btn-courseDetails'>
+                            <button onClick={Go_to_Addmission} className='enroll-now-btn-courseDetails'>Enroll Now</button>
+                        </div>
+                    </div>
+
+                    
+
+                    {/* <div className='form'>
                         <h1>REGISTRATION FOR {course.title}</h1>
                         <form onSubmit={submitHandler} >
                             <input
@@ -354,7 +405,9 @@ function CourseDetails() {
                             <button className='rt btn-en submit ' onClick={resetHandeler}>Reset</button>
                             <ToastContainer />
                         </form>
-                    </div>
+                    </div> */}
+
+                
                 </div>
             </div>
         </div>
