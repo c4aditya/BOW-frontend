@@ -17,10 +17,25 @@ function OnlineAddmissionForm() {
         pincode: ""
     });
 
+    const [documents, setDocuments] = useState({
+        tenthFile: null,
+        twelfthFile: null,
+        graduationFile: null,
+        postGraduationFile: null
+    });
+
     function changeHandler(event) {
         setonlineAddmissionFomData(previousData => {
             return { ...previousData, [event.target.name]: event.target.value };
         });
+    }
+
+    function fileChangeHandler(event) {
+        const { name, files } = event.target;
+        setDocuments(prevDocs => ({
+            ...prevDocs,
+            [name]: files[0]
+        }));
     }
 
     async function submitHandler(event) {
@@ -32,14 +47,21 @@ function OnlineAddmissionForm() {
             return;
         }
 
+        const formData = new FormData();
+        for (const key in onlineAddmissionFomData) {
+            formData.append(key, onlineAddmissionFomData[key]);
+        }
+
+        for (const key in documents) {
+            if (documents[key]) {
+                formData.append(key, documents[key]);
+            }
+        }
+
         try {
             const response = await fetch("https://api.botwaviation.com/onlineAddmissionDetails/", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(onlineAddmissionFomData)
-            
+                body: formData
             });
 
             if (response.ok) {
@@ -53,7 +75,8 @@ function OnlineAddmissionForm() {
             toast.error("Fill form correctly");
         }
 
-        console.log(onlineAddmissionFomData);
+        console.log("Form Data:", onlineAddmissionFomData);
+        console.log("Uploaded Files:", documents);
 
         setonlineAddmissionFomData({
             firstName: "",
@@ -66,20 +89,25 @@ function OnlineAddmissionForm() {
             qualification: "",
             address: "",
             pincode: ""
-        }
+        });
 
-        )
+        setDocuments({
+            tenthFile: null,
+            twelfthFile: null,
+            graduationFile: null,
+            postGraduationFile: null
+        });
     }
 
     return (
         <div className="online-addmission-form">
             <div className="image">
-                <img src={onlineAddmissionImg} />
+                <img src={onlineAddmissionImg} alt="Online Admission" />
             </div>
             <div className="form-online-addmission">
                 <div className="heading-application">
                     <h1>ADMISSION FORM</h1>
-                    <hr></hr>
+                    <hr />
                 </div>
                 <form onSubmit={submitHandler}>
                     <div className="online-addmissio-form">
@@ -96,7 +124,7 @@ function OnlineAddmissionForm() {
                         <div className="online-addmissio-form-personal">
                             <input type="number" name="mobno" value={onlineAddmissionFomData.mobno} onChange={changeHandler} placeholder="Mobile No" />
                             <select name='gender' value={onlineAddmissionFomData.gender} onChange={changeHandler}>
-                                <option value="" disabled defaultValue>Select Gender</option>
+                                <option value="" disabled>Select Gender</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Other">Other</option>
@@ -105,7 +133,7 @@ function OnlineAddmissionForm() {
 
                         <div className="online-addmissio-form-option">
                             <select name='course' onChange={changeHandler} value={onlineAddmissionFomData.course}>
-                                <option value="" disabled defaultValue>Select Course</option>
+                                <option value="" disabled>Select Course</option>
                                 <option value="aviation">Aviation</option>
                                 <option value="cruise">Cruise</option>
                                 <option value="airport">Airport Management</option>
@@ -114,7 +142,7 @@ function OnlineAddmissionForm() {
                             </select>
 
                             <select name="qualification" onChange={changeHandler} value={onlineAddmissionFomData.qualification} className='online-addmissio-form-qualification'>
-                                <option value="" disabled defaultValue>Highest Qualification</option>
+                                <option value="" disabled>Highest Qualification</option>
                                 <option value="10th">10th</option>
                                 <option value="12th">12th</option>
                                 <option value="ug">Graduation</option>
@@ -127,6 +155,27 @@ function OnlineAddmissionForm() {
                             <input type="number" name="pincode" onChange={changeHandler} value={onlineAddmissionFomData.pincode} placeholder="Pincode" />
                         </div>
                     </div>
+
+                    {/* File Upload Section */}
+                    <div className="files-uplodes">
+                        <div className="file-input-box">
+                            <label className="file-label">10th Class Certificate</label>
+                            <input type="file" name="tenthFile" onChange={fileChangeHandler} accept=".pdf,.jpg,.jpeg,.png" />
+                        </div>
+                        <div className="file-input-box">
+                            <label className="file-label">12th Class Certificate</label>
+                            <input type="file" name="twelfthFile" onChange={fileChangeHandler} accept=".pdf,.jpg,.jpeg,.png" />
+                        </div>
+                        <div className="file-input-box">
+                            <label className="file-label">Graduation Certificate</label>
+                            <input type="file" name="graduationFile" onChange={fileChangeHandler} accept=".pdf,.jpg,.jpeg,.png" />
+                        </div>
+                        <div className="file-input-box">
+                            <label className="file-label">Post Graduation Certificate</label>
+                            <input type="file" name="postGraduationFile" onChange={fileChangeHandler} accept=".pdf,.jpg,.jpeg,.png" />
+                        </div>
+                    </div>
+
 
                     <button type="submit" className="online-application-form">Submit Form</button>
                     <ToastContainer />

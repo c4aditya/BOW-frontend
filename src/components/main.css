@@ -236,6 +236,42 @@
         transform: scale(1.1);
     }
 
+    .files-uplodes {
+        width: 93%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:9px;
+        margin-top: 20px;
+    }
+    
+    .file-input-box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .file-label {
+        background-color: #87CEFA;
+        color: white;
+        font-weight: bold;
+        padding: 6px 12px;
+        border-radius: 4px 4px 0 0;
+        font-size: 14px;
+        margin-left: 29px;
+        width: 88%;
+    }
+    
+    .file-input-box input[type="file"] {
+        width: 93%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 0 0 4px 4px;
+        background-color: white;
+    }
+    
+    
+
+  
+
     .btn-hamburger {
         display: none;
         background-color: white;
