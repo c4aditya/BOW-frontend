@@ -808,23 +808,19 @@
 
     }
 
-
-  .seemore-course{
-    /* justify-content: center;
-    align-items: center;
-    margin-top: 17%;
-    display: flex */
-
-    /* border: 2px solid red;
-    width: 100%;
-    position: absolute; */
-
-  }
-     .row .image-section {
-
-        /* border: 2px solid red; */
-       
+    .error-input {
+        border: 2px solid red;
+        outline: none;
     }
+    
+    .error-text {
+        color: red;
+        font-size: 12px;
+        margin-top: 2px;
+        margin-bottom: 6px;
+    }
+    
+
 
     .row .image-section img{
      
