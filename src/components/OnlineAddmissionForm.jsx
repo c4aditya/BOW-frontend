@@ -99,7 +99,7 @@ function OnlineAddmissionForm() {
         }
 
         try {
-            const response = await fetch("http://localhost:5800/onlineAddmissionDetails/", {
+            const response = await fetch("https://api.botwaviation.com/onlineAddmissionDetails/", {
                 method: "POST",
                 body: formData  
             });
