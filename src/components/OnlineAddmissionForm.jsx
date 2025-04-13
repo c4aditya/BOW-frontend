@@ -120,7 +120,7 @@ function OnlineAddmissionForm() {
     return (
         <div className="online-addmission-form">
             <div className="image">
-                <img src={onlineAddmissionImg} alt="Online Admission" />
+                <img src={onlineAddmissionImg} alt="Online Admission"  />
             </div>
             <div className="form-online-addmission">
                 <div className="heading-application">

@@ -11,7 +11,6 @@ import rocket from "../../images/rocket-icon.webp";
 import calendar from "../../images/calendar-icon.webp";
 import vision from "../../images/rightimage.jpg";
 import leftimg from "../../images/leftimage.jpg";
-import messege from "../../images/chairmanbg.jpg";
 
 
 

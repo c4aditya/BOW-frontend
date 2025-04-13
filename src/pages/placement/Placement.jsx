@@ -69,12 +69,27 @@ const Placement = () => {
           </div>
           <div className="course-related-text">
             <h4> Course-Specific Placement Assistance</h4>
-            <p><span>1. Reengineering Program:</span>This program is designed to enhance your skills and career prospects. Our placement support connects you with organizations seeking versatile, forward-thinking professionals equipped with innovative problem-solving skills.</p>
+            <p><span>1. IT Courses:</span>This program is designed to enhance your skills and career prospects. Our placement support connects you with organizations seeking versatile, forward-thinking professionals equipped with innovative problem-solving skills.</p>
             <p><span>2. Diploma in Hotel Management:</span>The dynamic hospitality industry offers vast opportunities. We assist you in securing positions with hotels, resorts, and restaurants, focusing on roles in management, guest services, and operations.</p>
             <p><span>3. Diploma in Airport Management:</span>Gain specialized skills for roles in airport operations, customer service, and administration. Our placement services connect you with airport authorities and management companies to ensure a successful career.</p>
             <p><span>4. Diploma in Aviation:</span>Prepare for a soaring career in the aviation sector with our targeted placement assistance. We connect you with airlines and aviation companies, ensuring you are equipped with the skills and confidence to thrive in this fast-paced industry.</p>
             <p><span>5. Diploma in Air Hostess: </span>This program offers focused training for aspiring air hostesses, including customer service and safety protocols. Our placement support links you with airlines and hospitality groups to help you achieve your career goals.</p>
-            <p><span>6. Diploma in Cruise Ship Management:</span>Explore the unique career opportunities aboard cruise liners. Our placement services assist you in finding roles in hospitality, entertainment, and safety, preparing you for a fulfilling career at sea.</p>
+            <p>
+  <span>6. Diploma in Cruise Ship Management:</span> Explore the unique career opportunities aboard cruise liners. Our placement services assist you in finding roles in hospitality, entertainment, and safety, preparing you for a fulfilling career at sea.
+</p>
+
+<p>
+  <span>7. Diploma in Mass Communication:</span> Gain comprehensive insights into the dynamic world of media and journalism. This diploma prepares you for careers in television, radio, digital platforms, and print media. Our training focuses on practical skills like reporting, editing, public speaking, and content creation to help you thrive in the fast-paced communication industry.
+</p>
+
+<p>
+  <span>8. Certification in Metro Hospitality Management:</span> Prepare for exciting roles in urban hospitality sectors with this specialized certification. Learn essential skills in front office operations, guest services, and food & beverage management. With strong placement assistance, you’ll be ready to join hotels, resorts, and corporate hospitality chains in metro cities.
+</p>
+
+<p>
+  <span>9. Certification in Nursing Course:</span> Develop the skills and knowledge required to work as a healthcare professional. This course covers patient care, medical ethics, emergency response, and clinical practices. Our placement support connects you with hospitals, clinics, and nursing homes, ensuring a solid foundation for a compassionate healthcare career.
+</p>
+
           </div>
     </div>
     

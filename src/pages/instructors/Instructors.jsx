@@ -3,6 +3,9 @@ import "./instructors.css"
 import { CiLinkedin } from "react-icons/ci";
 import { CiInstagram } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
+import prof1 from "../../images/pof1.jpg"
+import prof2 from "../../images/pof2.jpg"
+import prof3 from "../../images/pof3.jpg"
 function Instructors() {
 
     const ourInstructors = [
@@ -10,21 +13,21 @@ function Instructors() {
             id: 1,
             name: "Roshan Rashtogi",
             deg:"Associate Professor",
-            image: "https://acelearningtraining.com/wp-content/uploads/2024/04/successful-businessman-1414x1536.jpg"
+            image: prof1
         },
 
         {
             id: 2,
             name: "Arvind Chauchan",
             deg:"Professor",
-            image: "https://acelearningtraining.com/wp-content/uploads/2024/04/successful-businessman-1414x1536.jpg"
+            image: prof2
         },
 
         {
             id: 3,
-            name: "Raju Rastogii",
+            name: "Rekha Singh",
             deg:"Associate Professor",
-            image: "https://acelearningtraining.com/wp-content/uploads/2024/04/successful-businessman-1414x1536.jpg"
+            image:prof3
         },
     ]
 
