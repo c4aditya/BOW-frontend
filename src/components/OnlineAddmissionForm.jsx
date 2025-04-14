@@ -109,6 +109,8 @@ function OnlineAddmissionForm() {
                 resetForm();
             } else {
                 toast.error("Something went wrong. Please try again.");
+              
+
             }
 
         } catch (error) {
