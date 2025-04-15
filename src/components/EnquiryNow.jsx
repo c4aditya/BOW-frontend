@@ -22,6 +22,72 @@ function EnquiryNow() {
     });
   }
 
+  // const submitform = async (event) => {
+  //   event.preventDefault();
+  
+  //   const validateMessage = {
+  //     firstName: "First Name is required",
+  //     lastName: "Last Name is required",
+  //     email: "Email is required",
+  //     number: "Mobile Number is required",
+  //     gender: "Gender is required",
+  //     course: "Course is required"
+  //   };
+  
+  //   // Check empty fields
+  //   for (const key in validateMessage) {
+  //     if (enquiryData[key] === "") {
+  //       toast.error(validateMessage[key]);
+  //       return;  // Exit if there's a validation error
+  //     }
+  //   }
+  
+  //   try {
+  //     const response = await fetch("https://api.botwaviation.com/enquiryNow/", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+        
+  //       },
+  //       body: JSON.stringify(enquiryData),
+  //     });
+  
+  //     // Check if the response is OK
+  //     if (response.ok) {
+  //       console.log("The data is sent to the database");
+  //       toast.success("Form submitted successfully!");
+  //       setEnquiryData({
+  //          firstName: "",
+  //          lastName: "",
+  //          email: "",
+  //          number: "",
+  //          gender: "",
+  //          course: "",
+  //          message: ""
+  //       });
+        
+  //     } else {
+
+  //       const errorData = await response.json(); // Get the error message from the backend
+  //       toast.error(errorData.message || "Error while submitting form"); // Display backend error message
+  //     }
+  
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast.error("Something went wrong!");
+  //   }
+  
+  //   // setEnquiryData({
+  //   //   firstName: "",
+  //   //   lastName: "",
+  //   //   email: "",
+  //   //   number: "",
+  //   //   gender: "",
+  //   //   course: "",
+  //   //   message: ""
+  //   // });
+  // };
+  
   const submitform = async (event) => {
     event.preventDefault();
   
@@ -34,16 +100,16 @@ function EnquiryNow() {
       course: "Course is required"
     };
   
-    // Check empty fields
     for (const key in validateMessage) {
       if (enquiryData[key] === "") {
         toast.error(validateMessage[key]);
-        return;  // Exit if there's a validation error
+        return;
       }
     }
   
     try {
-      const response = await fetch("https://api.botwaviation.com/enquiryNow/", {
+      // ✅ Using Vite proxy
+      const response = await fetch("/api/enquiryNow/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,41 +117,46 @@ function EnquiryNow() {
         body: JSON.stringify(enquiryData),
       });
   
-      // Check if the response is OK
       if (response.ok) {
-        console.log("The data is sent to the database");
         toast.success("Form submitted successfully!");
         setEnquiryData({
-           firstName: "",
-           lastName: "",
-           email: "",
-           number: "",
-           gender: "",
-           course: "",
-           message: ""
+          firstName: "",
+          lastName: "",
+          email: "",
+          number: "",
+          gender: "",
+          course: "",
+          message: "",
         });
-        
       } else {
-
-        const errorData = await response.json(); // Get the error message from the backend
-        toast.error(errorData.message || "Error while submitting form"); // Display backend error message
+        let errorText = "Unknown error";
+  
+        try {
+          const errorData = await response.clone().json(); // ✅ clone for json
+          errorText = errorData.message || JSON.stringify(errorData);
+        } catch (jsonError) {
+          try {
+            const textData = await response.clone().text(); // ✅ clone again for text
+            errorText = textData;
+          } catch (textError) {
+            errorText = "Unable to parse error message";
+          }
+        }
+  
+        toast.error(`Server Error: ${errorText}`);
       }
-  
     } catch (error) {
-      console.log(error);
-      toast.error("Something went wrong!");
-    }
+      console.error("Error submitting form:", error);
   
-    // setEnquiryData({
-    //   firstName: "",
-    //   lastName: "",
-    //   email: "",
-    //   number: "",
-    //   gender: "",
-    //   course: "",
-    //   message: ""
-    // });
+      if (error.message.includes("Failed to fetch")) {
+        toast.error("Server not reachable. Check CORS or backend status.");
+      } else {
+        toast.error(`Error: ${error.message}`);
+      }
+    }
   };
+  
+  
   
 
   return (
