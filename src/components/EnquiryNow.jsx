@@ -88,6 +88,68 @@ function EnquiryNow() {
   //   // });
   // };
   
+  // const submitform = async (event) => {
+  //   event.preventDefault();
+  
+  //   const validateMessage = {
+  //     firstName: "First Name is required",
+  //     lastName: "Last Name is required",
+  //     email: "Email is required",
+  //     number: "Mobile Number is required",
+  //     gender: "Gender is required",
+  //     course: "Course is required"
+  //   };
+  
+  //   for (const key in validateMessage) {
+  //     if (enquiryData[key] ==="") {
+  //       toast.error(validateMessage[key]);
+  //       return;
+  //     }
+  //   }
+  
+  //   try {
+  //     // ✅ Using Vite proxy
+  //     const response = await fetch("http://localhost:5900/enquiryNow/", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(enquiryData),
+  //     });
+  
+  //     if (response.ok) {
+  //       toast.success("Form submitted successfully!");
+  //       setEnquiryData({
+  //         firstName: "",
+  //         lastName: "",
+  //         email: "",
+  //         number: "",
+  //         gender: "",
+  //         course: "",
+  //         message: "",
+  //       });
+  //     } else {
+  //       let errorText;
+  //       try {
+  //         const errorData = await response.json();
+  //         errorText = errorData.message || JSON.stringify(errorData);
+  //       } catch (jsonError) {
+  //         errorText = await response.text();
+  //       }
+  //       toast.error(`Server Error: ${errorText}`);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  
+  //     if (error.message.includes("Failed to fetch")) {
+  //       toast.error("Server not reachable. Check CORS or backend status.");
+  //     } else {
+  //       toast.error(`Error: ${error.message}`);
+  //     }
+  //   }
+  // };
+  
+
   const submitform = async (event) => {
     event.preventDefault();
   
@@ -108,8 +170,7 @@ function EnquiryNow() {
     }
   
     try {
-      // ✅ Using Vite proxy
-      const response = await fetch("/api/enquiryNow/", {
+      const response = await fetch("http://localhost:5900/enquiryNow/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -129,21 +190,27 @@ function EnquiryNow() {
           message: "",
         });
       } else {
-        let errorText = "Unknown error";
-  
+        let errorText;
         try {
-          const errorData = await response.clone().json(); // ✅ clone for json
-          errorText = errorData.message || JSON.stringify(errorData);
-        } catch (jsonError) {
-          try {
-            const textData = await response.clone().text(); // ✅ clone again for text
-            errorText = textData;
-          } catch (textError) {
-            errorText = "Unable to parse error message";
+          const errorData = await response.json(); 
+          
+          if (errorData.field === "email") {
+            toast.error("Email already exists");
+          } else if (errorData.field === "number") {
+            toast.error("Phone number already exists");
+          } else if (Array.isArray(errorData.errors)) {
+            // Optional: handle multiple field errors
+            errorData.errors.forEach(err => {
+              toast.error(err.message);
+            });
+          } else {
+            toast.error(errorData.message || "Error while submitting form");
           }
-        }
   
-        toast.error(`Server Error: ${errorText}`);
+        } catch (jsonError) {
+          errorText = await response.text();
+          toast.error(`Server Error: ${errorText}`);
+        }
       }
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -155,7 +222,6 @@ function EnquiryNow() {
       }
     }
   };
-  
   
   
 

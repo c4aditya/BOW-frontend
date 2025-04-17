@@ -30,7 +30,7 @@ function MoreAboutUs() {
 
           <div className='main-content-class row'>
             <div className='image-section'>
-              <img src='https://img.freepik.com/free-photo/medium-shot-team-sitting-table_23-2149271747.jpg?t=st=1742188477~exp=1742192077~hmac=a5d0aa2fc8f17c29824103bedb88363df7ef4fc2e488648cb2d3aed29621e9f5&w=1480' alt="Placement Section" />
+              <img src='https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&w=600' alt="Placement Section" />
             </div>
             <div className='content-section'>
               <h1>Our Story</h1>
@@ -64,7 +64,7 @@ function MoreAboutUs() {
 
             </div>
             <div className='image-section'>
-              <img src='https://img.freepik.com/free-photo/people-working-call-center_23-2148094829.jpg?t=st=1742189857~exp=1742193457~hmac=af83d55fb1bd70c14f6280ff02822f9d06f01197c3f4014bd0f1c810c746306e&w=1380' alt="Placement Section" />
+              <img src='https://images.pexels.com/photos/5467576/pexels-photo-5467576.jpeg?auto=compress&cs=tinysrgb&w=600' alt="Placement Section" />
             </div>
           </div>
 

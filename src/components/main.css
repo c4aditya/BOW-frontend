@@ -495,10 +495,19 @@
         display: flex;
 
     }
+    .cards {
+        border: 1px solid brown;
+        transition: transform 0.3s ease, border 0.3s ease; /* smooth transition */
+      }
+      
+      .cards:hover {
+   
+        transform: scale(1.05); /* zoom slightly */
+      }
+
     /* Main Card Container */
 
-    .card-container {
-       
+    .card-container {      
         
         background-color: #F1F7F7;
         padding: 10px 0px 10px 0px;
@@ -508,13 +517,12 @@
     }
 
 
-    .main-cards-container{
-    
+    .main-cards-container{    
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         height: 1700px;
         flex-wrap: wrap;
-        row-gap: 0px;
+        row-gap: 2%;
         column-gap: 4%;
         padding: 10px;
         width: 85%;
@@ -523,7 +531,7 @@
     }
 
     .seemore-course{
-        padding-top: 30px;
+        padding-top: 7%;
         justify-content: center;
         display: flex;   
         margin: auto;
@@ -1607,6 +1615,10 @@
             width: 50%;
         }
 
+        .main-image-our-instructors .image-our-instructors img {
+            height: 250px;
+            width: 250px;
+        }
 
 
 
@@ -1808,9 +1820,17 @@
             left: 50%;
         }
 
-        .placement-container {
+      
+        
 
-            grid-template-columns: repeat(2, 2fr);
+        .main-image-our-instructors .image-our-instructors img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .social-meadia-links-instructors ul li svg {
+            font-size: 20px;
+            font-weight: 800;
         }
 
     }
@@ -2004,6 +2024,8 @@
         .fether-content p {
             font-size: 14px;
         }
+       
+        
 
     }
 
@@ -2391,6 +2413,15 @@
         .seemore-btn {
             padding: 3px;
         }
+        .main-image-our-instructors{
+            flex-direction: column;
+        }
+
+        .main-image-our-instructors .image-our-instructors img {
+            height: 250px;
+            width: 250px;
+        }
+        
     }
 
   
@@ -2668,6 +2699,18 @@
 
         .counter-item:not(:last-child) {
             border: none;
+        }
+        .main-image-our-instructors{
+            flex-direction: column;
+        }
+
+        .main-image-our-instructors .image-our-instructors img {
+            height: 250px;
+            width: 250px;
+        }
+        .social-meadia-links-instructors ul li svg {
+            font-size: 20px;
+            font-weight: 800;
         }
 
 

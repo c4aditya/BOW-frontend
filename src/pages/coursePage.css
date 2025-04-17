@@ -91,17 +91,14 @@
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 2rem;
     width: 90%;
-    margin: auto;
+    margin:50px auto;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
 }
 
 
-.cards{
-    border: 1px solid #BB2D3B;
 
-    }
 
 
 

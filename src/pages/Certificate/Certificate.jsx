@@ -180,6 +180,15 @@ const Certificate = () => {
             className="certificate-img"
             variants={fadeInUpAnimation}
           />
+
+<motion.img
+            src={certificate}
+            alt="CERTIFICATION"
+            className="certificate-img"
+            variants={fadeInUpAnimation}
+          />
+
+          
         </motion.div>
 
       </div>
