@@ -170,7 +170,7 @@ function EnquiryNow() {
     }
   
     try {
-      const response = await fetch("https:/api.botwaviation.com/enquiryNow/", {
+      const response = await fetch("https://api.botwaviation.com/enquiryNow/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
