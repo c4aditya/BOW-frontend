@@ -60,10 +60,10 @@ const Footer = () => {
             <h4>Contacts</h4>
             <hr></hr>
 
-            <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Nehru market gate-4, Greater Noida, 201301</p>
+            <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Office No 38, Bukhara Faridpur Road Bareilly (Uttar Pradesh) - 243201</p>
             {/* <p> Nehru market gate-4 </p> */}
             {/* <p> Greater Noida, 201301</p> */}
-            <p><MdCall /> +91 8374908364</p>
+            <p><MdCall /> +91 7303275128</p>
 
 
           </div>

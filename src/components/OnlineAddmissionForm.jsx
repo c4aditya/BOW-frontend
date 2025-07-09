@@ -45,13 +45,6 @@ function OnlineAddmissionForm() {
         }));
     };
 
-    const isFormValid = () => {
-        for (let key in onlineAddmissionFormData) {
-            if (!onlineAddmissionFormData[key]) return false;
-        }
-        return true;
-    };
-
     const resetForm = () => {
         setOnlineAddmissionFormData({
             firstName: "",
@@ -82,10 +75,7 @@ function OnlineAddmissionForm() {
     const submitHandler = async (event) => {
         event.preventDefault();
 
-        if (!isFormValid()) {
-            toast.error("Please fill all the required fields.");
-            return;
-        }
+        // ===> isFormValid check hata diya gaya hai <===
 
         const formData = new FormData();
         for (const key in onlineAddmissionFormData) {
@@ -109,8 +99,6 @@ function OnlineAddmissionForm() {
                 resetForm();
             } else {
                 toast.error("Something went wrong. Please try again.");
-              
-
             }
 
         } catch (error) {
