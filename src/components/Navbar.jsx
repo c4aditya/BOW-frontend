@@ -95,7 +95,7 @@ function Navbar() {
           <div className="call-email">
             <div className="call">
               <ul>
-                <li>For Addmission : +91 8276363636 </li>
+                <li>For Addmission : +91 7303275128 </li>
               </ul>
             </div>
 
