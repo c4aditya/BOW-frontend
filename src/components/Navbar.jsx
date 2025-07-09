@@ -101,7 +101,7 @@ function Navbar() {
 
             <div className="email">
               <ul>
-                <li>Email :- addmission@bow.in</li>
+                <li>Email :- info@botwaviation.com</li>
               </ul>
             </div>
           </div>
