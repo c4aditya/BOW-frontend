@@ -1519,6 +1519,9 @@
             font-size: 1.9rem;
             line-height: 2rem;
         }
+        .fee-btn{
+            width: 98%;
+        }
 
         .enquiry {
             .btn {
@@ -1658,7 +1661,9 @@
         .nav-bar-main-class {
             padding: 9px;
         }
-        
+          .fee-btn{
+            width: 98%;
+        }
         .meanu-list {
             display: block;
             width: 60%;
@@ -1837,7 +1842,9 @@
 
     @media (min-width: 600px) and (max-width: 765px) {
       
-     
+       .fee-btn{
+            width: 98%;
+        }
        
         .logo-meanu-list{
             display: block;
@@ -2036,6 +2043,9 @@
 
 
     @media only screen and (max-width:600px) {
+          .fee-btn{
+            width: 98%;
+        }
             
         .social-media-logos{
             padding: 2px;

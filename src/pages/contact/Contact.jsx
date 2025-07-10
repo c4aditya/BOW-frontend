@@ -111,9 +111,16 @@ const Contact = () => {
           Assistance | Admissions Open For New Batches | Register Now!
         </marquee>
       </div>
-
+     
+      <div className="extra-contact">
+            <p>For Info. :- info@botwaviation.com </p>
+            <p>For Admission :- admisson@botwaviation.com</p>
+            <p>Phone :-  +91 7303275128</p>
+          </div>
       <div className="contact-content-form">
+        
         <div className="form-section-cc">
+          
           <div className="form-heading">
             <h1>What can we do for you?</h1>
           </div>
@@ -172,6 +179,8 @@ const Contact = () => {
 
         <div className="image-section-contact">
           <img src={Contactcg} alt="24/7 Service" />
+
+          
         </div>
       </div>
 

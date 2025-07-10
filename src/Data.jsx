@@ -31,7 +31,7 @@ const Data = [
     Duration:"3-6 monts",
     SalaryPackage:" 5 - 8 LPA",
     mode:"online",
-    moreDetails:"singha1418@gmail.com"
+    moreDetails:"info@botwaviation.com"
   }
 
   
@@ -60,7 +60,7 @@ const Data = [
         Duration:"3-6 monts",
         SalaryPackage:" 5 - 8 LPA",
         mode:"online",
-        moreDetails:"singha1418@gmail.com"
+        moreDetails:"info@botwaviation.com"
       }
     },
     {
@@ -83,7 +83,7 @@ CourseDetails :{
   Duration:"3-6 monts",
   SalaryPackage:" 5 - 8 LPA",
   mode:"online",
-  moreDetails:"singha1418@gmail.com"
+  moreDetails:"info@botwaviation.com"
 }
 
     },
@@ -109,7 +109,7 @@ CourseDetails :{
   Duration:"3-6 monts",
   SalaryPackage:" 5 - 8 LPA",
   mode:"online",
-  moreDetails:"singha1418@gmail.com"
+  moreDetails:"info@botwaviation.com"
 }
 
   },
@@ -134,7 +134,7 @@ CourseDetails :{
       Duration:"3-6 monts",
       SalaryPackage:" 5 - 8 LPA",
       mode:"online",
-      moreDetails:"singha1418@gmail.com"
+      moreDetails:"info@botwaviation.com"
     }
 },
 
@@ -158,7 +158,7 @@ CourseDetails :{
     Duration:"3-6 monts",
     SalaryPackage:" 5 - 8 LPA",
     mode:"online",
-    moreDetails:"singha1418@gmail.com"
+    moreDetails:"info@botwaviation.com"
   }
 },
 
@@ -182,7 +182,7 @@ CourseDetails :{
   Duration:"3-6 monts",
   SalaryPackage:" 5 - 8 LPA",
   mode:"online",
-  moreDetails:"singha1418@gmail.com"
+  moreDetails:"info@botwaviation.com"
 }
 
 },
@@ -207,7 +207,7 @@ CourseDetails :{
     Duration:"3-6 monts",
     SalaryPackage:" 5 - 8 LPA",
     mode:"online",
-    moreDetails:"singha1418@gmail.com"
+    moreDetails:"info@botwaviation.com"
   }
 },
 
@@ -232,7 +232,7 @@ CourseDetails :{
     Duration:"3-6 monts",
     SalaryPackage:" 5 - 8 LPA",
     mode:"online",
-    moreDetails:"singha1418@gmail.com"
+    moreDetails:"info@botwaviation.com"
   }
 },
 

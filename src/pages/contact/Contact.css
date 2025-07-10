@@ -93,7 +93,7 @@
 
 .contact-form label {
   display: block;
-  margin: 10px 0 10px;
+  /* margin: 10px 0 10px; */
   font-weight: bold;
 }
 
@@ -108,6 +108,7 @@
 
 }
 .image-section-contact {
+ 
   flex: 1;
   display: flex;
   margin-top: 33px;
@@ -117,9 +118,21 @@
 }
 
 .image-section-contact img {
+  position: relative;
   max-width: 588px;
   height: auto;
   border-radius: 8px;
+}
+
+.extra-contact{
+  font-weight: 900;
+ border-radius: 5px;
+  width: 49%;
+  line-height: 2rem;
+  padding: 10px;
+  margin-top: 2%;
+  box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 2%;
 }
 
 
