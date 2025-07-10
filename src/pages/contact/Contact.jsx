@@ -66,7 +66,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch("https://api.botwavation.com/contactUs/", {
+      const response = await fetch("https://api.botwaviation.com/contactUs/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -16,7 +16,7 @@ const Refund = () => {
             <div className="refund-body">
                 <div className="refund-body">
                     <div className="refund-text">
-                        <p>Welcome to SGACE Learning Training Institute!
+                        <p>Welcome to BOTW aviation traning institute Learning Training Institute!
 
                             We are excited to have you explore your learning journey with us at acelearning.com. By engaging with our website and purchasing our courses, you agree to abide by the terms and conditions outlined below. Please read them carefully as they define your rights and responsibilities while using our services.
 
@@ -29,7 +29,7 @@ const Refund = () => {
 
                         <ul>
 
-                            <li><IoMdCheckboxOutline className="icon" />at SGACE Acasdasdademy are committed to provide the best courses.</li>
+                            <li><IoMdCheckboxOutline className="icon" />at BOTW aviation traning institute are committed to provide the best courses.</li>
 
                             </ul>
                             <ul>
@@ -58,7 +58,7 @@ const Refund = () => {
                         <ul>
                             <li>
                                 <IoMdCheckboxOutline />
-                                We at SGACE Academy are committed to provide the best courses on aviation, tourism & hospitality etc.
+                                We at BOTW aviation traning institute Academy are committed to provide the best courses on aviation, tourism & hospitality etc.
                             </li>
                             <li>
                                 <IoMdCheckboxOutline />
@@ -66,13 +66,13 @@ const Refund = () => {
                             </li>
                             <li>
                                 <IoMdCheckboxOutline />
-                                In case of dissatisfaction from the course, you are encouraged to write about your particular concerns with us at our email (info@imtacademy.in). We will take all possible measures to address your concern.
+                                In case of dissatisfaction from the course, you are encouraged to write about your particular concerns with us at our email (iinfo@botwaviation.com). We will take all possible measures to address your concern.
                             </li>
                         </ul>
 
                         <h1>Return Policy</h1>
                         <ul>
-                            <li><IoMdCheckboxOutline className="icon" /> SGACE Academy is an educational Academy and does not give any job guarantee and/or job orientation to the students.</li>
+                            <li><IoMdCheckboxOutline className="icon" /> BOTW aviation traning institute  is an educational Academy and does not give any job guarantee and/or job orientation to the students.</li>
                             <li><IoMdCheckboxOutline className="icon" /> The fees paid by the students to the Academy for any course are non-refundable and non-transferable under any circumstances whatsoever.</li>
                             <li><IoMdCheckboxOutline className="icon" /> The fees can be paid either in lump sum or in installments. Provided however that in case of payment through E.M.I, the 1st installment should be paid before the commencement of Training and the remaining installments, are to be paid by A/C payee Post-Dated Cheques payable in favour of the Academy, at the time of admission itself.</li>
                             <li><IoMdCheckboxOutline className="icon" /> The Academy shall only present the Post-Dated Cheques on the due dates of the installments of the fees. In the event of dishonor of Post-Dated Cheque provided by the student and/or their guardians/parents, the cheque bouncing charges shall be borne by the student and/or their guardians/parents. The failure to pay the fees by due date by the student shall result in imposition of 18% interest on the outstanding amount from the due date till realization.</li>
