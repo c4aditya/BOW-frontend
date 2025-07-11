@@ -97,9 +97,9 @@ const Aboutus= () => {
 
           <div className='listing-item'>
             <ul>
-               <li> <span><FaCheck /></span> MCA <sapn className="color"> [ Ministry of Corporate Affairs, Government of India ] </sapn> </li>
+               <li> <span><FaCheck /></span> MCA <sapn className="color"> [ Ministry of Corporate Affairs, Gov. of India ] </sapn> </li>
                <li> <span><FaCheck /></span> ISO <sapn className="color">  [ International Organization for Standardization ]  </sapn></li>
-               <li> <span><FaCheck /></span> SIDH <sapn className="color"> [ skill india digital hub ] </sapn></li>
+               <li> <span><FaCheck /></span> SIDH <sapn className="color"> [ Skill india digital hub ] </sapn></li>
                <li> <span><FaCheck /></span> IICA <sapn className="color"> [ Indian Institute of Corporate Affairs ] </sapn></li>
                <li> <span><FaCheck /></span> NCT <sapn className="color"> [National Capital territory ] </sapn></li>
             </ul>

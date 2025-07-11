@@ -90,6 +90,9 @@
   text-align: center;
   
 }
+.listing-item ul li span{
+  display: flex;
+}
 
 .why-us-image img {
   width: 100%;
@@ -275,6 +278,23 @@ margin: 0 auto;
 }
 .message-chairman h2{
   font-size: 1.9rem;
+}
+.certified-our-instituts{
+  flex-direction: column-reverse;
+}
+.listing-item{
+  line-height: 2rem;
+  font-size: 1rem;
+  margin-top: 20%;
+}
+.listing-item ul li{
+   font-size: .9rem;
+}
+.listing-item ul li span{
+  display: flex;
+}
+.color{
+  font-size: .7rem;
 }
 }
 @media (max-width:480px) {
