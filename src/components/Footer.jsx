@@ -1,6 +1,6 @@
 import React from "react";
 
-
+import { FaCheck } from "react-icons/fa6";
 import { MdCall, MdLocationPin } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
@@ -64,6 +64,11 @@ const Footer = () => {
             {/* <p> Nehru market gate-4 </p> */}
             {/* <p> Greater Noida, 201301</p> */}
             <p><MdCall /> +91 7303275128</p>
+             <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
+             <p> <span><FaCheck /></span> International Organization for Standardization </p>
+             <p> <span><FaCheck /></span> skill india digital hub </p>
+             <p><span><FaCheck /></span>  Indian Institute of Corporate Affairs</p>
+             <p><span><FaCheck /></span> National Capital territory</p>
 
 
           </div>

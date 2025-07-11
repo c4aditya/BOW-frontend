@@ -1,5 +1,6 @@
 
 import './Aboutus.css';
+import { FaCheck } from "react-icons/fa6";
 import { useEffect } from 'react';
 import aboutbg from '../../images/aboutbg.jpg';
 import Instructors from '../instructors/Instructors';
@@ -88,6 +89,28 @@ const Aboutus= () => {
         <div className="message-chairman-section">
           <div> <Instructors/></div>
         </div>
+
+
+        <div className='main-certified-our-instituts'>
+        <h1 class="heading-instructors">Certified by</h1>
+        <div className='certified-our-instituts'>
+
+          <div className='listing-item'>
+            <ul>
+               <li> <span><FaCheck /></span> MCA <sapn className="color"> [ Ministry of Corporate Affairs, Government of India ] </sapn> </li>
+               <li> <span><FaCheck /></span> ISO <sapn className="color">  [ International Organization for Standardization ]  </sapn></li>
+               <li> <span><FaCheck /></span> SIDH <sapn className="color"> [ skill india digital hub ] </sapn></li>
+               <li> <span><FaCheck /></span> IICA <sapn className="color"> [ Indian Institute of Corporate Affairs ] </sapn></li>
+               <li> <span><FaCheck /></span> NCT <sapn className="color"> [National Capital territory ] </sapn></li>
+            </ul>
+          </div>
+          <div className='certifite-image'>
+            <img class="move-up-down" src='https://res.cloudinary.com/dxgmovaih/image/upload/v1752214619/wmremove-transformed-removebg-preview_jir6dj.png'>
+            </img>
+          </div>
+        </div>
+        </div>
+        
         <div className="placement-container">
         <div className="placement-item-cc">
           <img src={target} alt="Career Counseling" className="placement-icon" />
