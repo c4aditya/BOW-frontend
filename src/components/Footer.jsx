@@ -66,7 +66,7 @@ const Footer = () => {
             <p><MdCall /> +91 7303275128</p>
              <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
              <p> <span><FaCheck /></span> International Organization for Standardization </p>
-             <p> <span><FaCheck /></span> Skill india digital hub </p>
+             <p> <span><FaCheck /></span> Skill India digital hub </p>
              <p><span><FaCheck /></span>  Indian Institute of Corporate Affairs</p>
              <p><span><FaCheck /></span> National Capital territory</p>
 
