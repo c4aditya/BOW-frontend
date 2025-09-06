@@ -3,15 +3,13 @@ import "./Autoscroll.css";
 
 function ApplicationContainer() {
   const logos = [
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-3.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-1.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-2.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-4.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-17.png",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-6.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-10.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-12.jpg",
-    "https://www.imtacademy.in/assets/images/company-icons/company-icon-14.jpg",
+    "https://res.cloudinary.com/dxgmovaih/image/upload/v1757157503/logo_02_p5mys3.jpg",
+    "https://res.cloudinary.com/dxgmovaih/image/upload/v1757157493/indigoImage_ivrjla.jpg",
+    "https://res.cloudinary.com/dxgmovaih/image/upload/v1757157477/10_tg1bt6.jpg",
+    "https://res.cloudinary.com/dxgmovaih/image/upload/v1757157450/7_eqibns.jpg",
+    "https://res.cloudinary.com/dxgmovaih/image/upload/v1757157427/4_ol54uk.jpg",
+    "https://res.cloudinary.com/dxgmovaih/image/upload/v1757157420/2_oswrkl.jpg",
+ 
 
   ];
 
@@ -35,6 +33,7 @@ function ApplicationContainer() {
               </div>
             ))}
           </div>
+         
           <div className="marquee-group">
             {logos.map((logo, index) => (
               <div className="image-group" key={`triplicate-${index}`}>
