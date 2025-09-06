@@ -114,10 +114,10 @@ function Navbar() {
         <div className="main-top-class">
           <div className="nav-bar-main-class">
           <div className="logo">
-                <img src={mainlogo} alt="logo"/>
+                <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1757158298/Screenshot_2025-09-06_170036-removebg-preview_hgqmbr.png" alt="logo"/>
               </div>
               
-
+  
               <div className="meanu-list">
                 <ul>
               

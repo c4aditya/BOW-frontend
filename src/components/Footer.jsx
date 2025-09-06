@@ -33,36 +33,13 @@ const Footer = () => {
           </div>
 
 
-          {/* <div className="sb_footer-links_div">
-                    <h4>Popular courses</h4> 
-                
-                <a href="/course">
-                        <p>Reengineering Program</p>
-                    </a>
-                <a href="/course">
-                        <p>Hotel Management</p>
-                    </a>
-                <a href="/course">
-                        <p>Airport Management</p>
-                    </a>
-                <a href="/course">
-                        <p>Aviation</p>
-                    </a>
-                <a href="/course ">
-                        <p>Air Hostess</p>
-                    </a>
-                <a href="/course ">
-                        <p>Cruise Ship</p>
-                    </a>
-                
-             </div> */}
+        
           <div className="contact_details">
             <h4>Contacts</h4>
             <hr></hr>
 
-            <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Office No 38, Bukhara Faridpur Road Bareilly (Uttar Pradesh) - 243201</p>
-            {/* <p> Nehru market gate-4 </p> */}
-            {/* <p> Greater Noida, 201301</p> */}
+            <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Bukhara Faridpur Road Bareilly (Uttar Pradesh) - 243201</p>
+          
             <p><MdCall /> +91 7303275128</p>
              <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
              <p> <span><FaCheck /></span> International Organization for Standardization </p>
@@ -83,14 +60,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="sb_footer-below-links">
-            {/* <h4>social media</h4> */}
-            {/* <div className="socialmedia">
-              <p><img src={fb} alt="" /></p>
-              <p><img src={x} alt="" /></p>
-              <p><img src={insta} alt="" /></p>
-              <p><img src={linkdin} alt="" /></p>
-            </div> */}
-
+         
           </div>
         </div>
 

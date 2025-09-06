@@ -115,7 +115,9 @@ const Contact = () => {
       <div className="extra-contact">
             <p>For Info. :- info@botwaviation.com </p>
             <p>For Admission :- admisson@botwaviation.com</p>
+            <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etha  - 207001 </p>
             <p>Phone :-  +91 7303275128</p>
+
           </div>
       <div className="contact-content-form">
         
@@ -184,17 +186,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="responsive-map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.8216239197227!2d79.47710247137695!3d28.212731549772126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ff925a858f8d9%3A0x6000a2a57ca553d6!2s38%2C%20Bukhara%20Faridpur%20Road%2C%20Tigra%2C%20Uttar%20Pradesh%20243503!5e0!3m2!1sen!2sin!4v1752218423001!5m2!1sen!2sin"
-        width="600"
-         height="450"
-          
-      
-           loading="lazy">
-
-
-            </iframe>
-      </div>
+    
 
       <ToastContainer />
     </div>
