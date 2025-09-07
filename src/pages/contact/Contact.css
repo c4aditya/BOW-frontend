@@ -451,4 +451,7 @@
   .responsive-map {
     height: 100px; /* Reduce height for smaller screens */
   }
+  .extra-contact{
+    width: 90%;
+  }
 }
