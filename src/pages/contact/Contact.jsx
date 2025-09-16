@@ -115,7 +115,7 @@ const Contact = () => {
       <div className="extra-contact">
             <p>For Info. :- info@botwaviation.com </p>
             <p>For Admission :- admisson@botwaviation.com</p>
-            <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etha  - 207001 </p>
+            <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etah   - 207001 </p>
             <p>Phone :-  +91 7303275128</p>
 
           </div>
