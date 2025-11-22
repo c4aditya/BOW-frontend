@@ -40,7 +40,7 @@ const Footer = () => {
 
             <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Bukhara Faridpur Road Bareilly (Uttar Pradesh) - 243201</p>
           
-            <p><MdCall /> +91 7303275128</p>
+            <p><MdCall /> +91 92172 20299</p>
              <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
              <p> <span><FaCheck /></span> International Organization for Standardization </p>
              <p> <span><FaCheck /></span> Skill India digital hub </p>
