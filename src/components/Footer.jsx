@@ -38,7 +38,7 @@ const Footer = () => {
             <h4>Contacts</h4>
             <hr></hr>
 
-            <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Bukhara Faridpur Road Bareilly (Uttar Pradesh) - 243201</p>
+            <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Infront of Sunhari Nagar Gate Shikohabad Road , Etah - 207001</p>
           
             <p><MdCall /> +91 92172 20299</p>
              <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
