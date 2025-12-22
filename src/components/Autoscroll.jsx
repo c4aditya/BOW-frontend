@@ -19,28 +19,28 @@ function ApplicationContainer() {
         <div className="text-autoscroll"></div>
         <div className="note"></div>
         <div className="marquee">
-          <div className="marquee-group">
+          {/* <div className="marquee-group">
             {logos.map((logo, index) => (
               <div className="image-group" key={index}>
                 <img className="image-auto" src={logo} alt={`Logo ${index}`} />
               </div>
             ))}
-          </div>
-          <div className="marquee-group">
+          </div> */}
+          {/* <div className="marquee-group">
             {logos.map((logo, index) => (
               <div className="image-group" key={`duplicate-${index}`}>
                 <img className="image-auto" src={logo} alt={`Logo ${index}`} />
               </div>
             ))}
-          </div>
+          </div> */}
          
-          <div className="marquee-group">
+          {/* <div className="marquee-group">
             {logos.map((logo, index) => (
               <div className="image-group" key={`triplicate-${index}`}>
                 <img className="image-auto" src={logo} alt={`Logo ${index}`} />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

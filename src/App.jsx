@@ -78,9 +78,7 @@ function App() {
         <Route path="/certificate" element={<Certificate />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/policy" element={<Refund />} />
-
-        
+        <Route path="/policy" element={<Refund />} />       
         
 
        
