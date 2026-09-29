@@ -235,6 +235,31 @@ CourseDetails :{
     moreDetails:"info@botwaviation.com"
   }
 },
+{
+  id: 10,
+  image: aviation, // Replace with a relevant Aviation & Operations course image
+  title: "CERTIFICATION IN AVIATION & OPERATIONS MANAGEMENT",
+  price: "30,000",
+  description: "Start your career in the fast-growing aviation industry with our Certification in Aviation & Operations Management. This course provides practical knowledge of airport operations, airline management, ground handling, aviation safety, and operational coordination. Designed for students and working professionals, the program can be completed in as little as 2 months with flexible learning options.",
+  overview: "The Certification in Aviation & Operations Management is designed to equip learners with essential operational and managerial skills required in the aviation sector. The program covers airline operations, airport management, safety regulations, and customer service standards, preparing students for roles across aviation and airport operations.",
+  pointsMessages: {
+      pointone: "Gain hands-on knowledge of airline and airport operations, including ground handling and flight coordination.",
+      pointtow: "Understand aviation safety standards, compliance procedures, and operational regulations.",
+      pointThree: "Learn operational planning, resource management, and coordination in aviation environments.",
+      pointFour: "Develop customer service and communication skills required in aviation operations roles.",
+      pointFive: "Improve career readiness with industry-focused training, practical insights, and guidance."
+  },
+
+  CourseDetails: {
+    courseLevel: "Intermediate",
+    jobProfile: "Airport Operations Executive, Airline Operations Coordinator, Ground Staff",
+    Duration: "2 months (Fast-track) / 3–6 months",
+    SalaryPackage: "4 – 7 LPA",
+    mode: "Online",
+    moreDetails: "info@botwaviation.com"
+  }
+}
+
 
 
 

@@ -172,21 +172,21 @@ const Certificate = () => {
           variants={containerAnimation}
         >
           {/* Heading animation */}
-          <motion.h1 variants={fadeInUpAnimation}>Certificate</motion.h1>
+          {/* <motion.h1 variants={fadeInUpAnimation}>Certificate</motion.h1> */}
           {/* Image animation */}
-          <motion.img
+          {/* <motion.img
             src={certificate}
             alt="CERTIFICATION"
             className="certificate-img"
             variants={fadeInUpAnimation}
-          />
+          /> */}
 
-<motion.img
+{/* <motion.img
             src={certificate}
             alt="CERTIFICATION"
             className="certificate-img"
             variants={fadeInUpAnimation}
-          />
+          /> */}
 
           
         </motion.div>
