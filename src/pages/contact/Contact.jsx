@@ -116,7 +116,7 @@ const Contact = () => {
             <p>For Info. :- info@botwaviation.com </p>
             <p>For Admission :- admisson@botwaviation.com</p>
             <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etah   - 207001 </p>
-            <p>Phone :-  +91 92172 20299</p>
+            <p>Phone :-  +91 +91 73032 52495</p>
 
           </div>
       <div className="contact-content-form">
