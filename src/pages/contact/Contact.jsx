@@ -111,15 +111,6 @@ const Contact = () => {
           Assistance | Admissions Open For New Batches | Register Now!
         </marquee>
       </div>
-<<<<<<< HEAD
-     
-      <div className="extra-contact">
-            <p>For Info. :- info@botwaviation.com </p>
-            <p>For Admission :- admission@botwaviation.com</p>
-            <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etah   - 207001 </p>
-            <p>Phone :-  +91 +91 73032 52495</p>
-=======
->>>>>>> a152e32 (adding code)
 
       <div className="extra-contact">
         <p>For Info. :- info@botwaviation.com </p>

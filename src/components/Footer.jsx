@@ -39,15 +39,8 @@ const Footer = () => {
             <hr></hr>
 
             <p><MdLocationPin></MdLocationPin>  Birds of the world aviation training institute Infront of Sunhari Nagar Gate Shikohabad Road , Etah - 207001</p>
-<<<<<<< HEAD
-          
-            <p><MdCall /> +91 73032 52495</p>
-             <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
-             <p> <span><FaCheck /></span> International Organization for Standardization </p>
-             <p> <span><FaCheck /></span> Skill India digital hub </p>
-             <p><span><FaCheck /></span>  Indian Institute of Corporate Affairs</p>
-             <p><span><FaCheck /></span> National Capital territory</p>
-=======
+
+
 
             <p><MdCall />+91 92057 61641 ,+91 92172 20299</p>
             <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
@@ -55,7 +48,7 @@ const Footer = () => {
             <p> <span><FaCheck /></span> Skill India digital hub </p>
             <p><span><FaCheck /></span>  Indian Institute of Corporate Affairs</p>
             <p><span><FaCheck /></span> National Capital territory</p>
->>>>>>> a152e32 (adding code)
+
 
 
           </div>
