@@ -88,13 +88,13 @@
 }
 .course-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 28px;
     width: 90%;
-    margin:50px auto;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
+    max-width: 1280px;
+    margin: 40px auto;
+    align-items: stretch;
+    padding-bottom: 20px;
 }
 
 

@@ -111,18 +111,27 @@ const Contact = () => {
           Assistance | Admissions Open For New Batches | Register Now!
         </marquee>
       </div>
+<<<<<<< HEAD
      
       <div className="extra-contact">
             <p>For Info. :- info@botwaviation.com </p>
             <p>For Admission :- admission@botwaviation.com</p>
             <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etah   - 207001 </p>
             <p>Phone :-  +91 +91 73032 52495</p>
+=======
+>>>>>>> a152e32 (adding code)
 
-          </div>
+      <div className="extra-contact">
+        <p>For Info. :- info@botwaviation.com </p>
+        <p>For Admission :- admission@botwaviation.com</p>
+        <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etah   - 207001 </p>
+        <p>Phone :- +91 92057 61641 ,+91 92172 20299 </p>
+
+      </div>
       <div className="contact-content-form">
-        
+
         <div className="form-section-cc">
-          
+
           <div className="form-heading">
             <h1>What can we do for you?</h1>
           </div>
@@ -151,7 +160,7 @@ const Contact = () => {
               type="text"
               name="subject"
               placeholder="Enter your subject"
-              value={formData.subject}  
+              value={formData.subject}
               onChange={handleChange}
             />
 
@@ -174,7 +183,7 @@ const Contact = () => {
 
             <div className="bottombtn">
               <button type="submit">Submit</button>
-             
+
             </div>
           </form>
         </div>
@@ -182,11 +191,11 @@ const Contact = () => {
         <div className="image-section-contact">
           <img src={Contactcg} alt="24/7 Service" />
 
-          
+
         </div>
       </div>
 
-    
+
 
       <ToastContainer />
     </div>

@@ -54,6 +54,9 @@ function App() {
                       title={item.title}
                       description={item.description}
                       image={item.image}
+                      courseDetails={item.CourseDetails}
+                      pointsMessages={item.pointsMessages}
+                      price={item.price}
                     />
                   ))}
                 </div>
