@@ -42,7 +42,7 @@ const Footer = () => {
 
 
 
-            <p><MdCall />+91 92057 61641 ,+91 92172 20299</p>
+            <p><MdCall /> +91 9205761641 +91 7303252495</p>
             <p> <span><FaCheck /></span>  Ministry of Corporate Affairs </p>
             <p> <span><FaCheck /></span> International Organization for Standardization </p>
             <p> <span><FaCheck /></span> Skill India digital hub </p>

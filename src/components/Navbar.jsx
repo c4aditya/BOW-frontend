@@ -91,8 +91,8 @@ function Navbar() {
 
         {/* Mobile Centered Phone Number */}
         <div className="mobile-navbar-phone">
-          <a href="tel:+919217220299" className="mobile-phone-link">
-            <span>For Admission :+91 92057 61641 ,+91 92172 20299</span>
+          <a href="tel:+91 9205761641" className="mobile-phone-link">
+            <span>For Admission : +91 9205761641 +91 7303252495</span>
           </a>
         </div>
 
@@ -101,7 +101,7 @@ function Navbar() {
             <div className="call">
               <ul>
 
-                <li>For Addmission : +91 92172 20299  +91 92172 20299 </li>
+                <li>For Addmission :  +91 9205761641 +91 7303252495 </li>
 
               </ul>
             </div>

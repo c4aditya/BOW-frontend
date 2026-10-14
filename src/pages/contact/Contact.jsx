@@ -107,7 +107,7 @@ const Contact = () => {
 
       <div className="ad">
         <marquee>
-          Admission Opens For Session 2024-2025 | 100% Job Placements
+          Admission Opens For Session 2025-2026 | 100% Job Placements
           Assistance | Admissions Open For New Batches | Register Now!
         </marquee>
       </div>
@@ -116,7 +116,7 @@ const Contact = () => {
         <p>For Info. :- info@botwaviation.com </p>
         <p>For Admission :- admission@botwaviation.com</p>
         <p>Branch :- Infront of Sunhari Nagar Gate Shikohabad Road , Etah   - 207001 </p>
-        <p>Phone :- +91 92057 61641 ,+91 92172 20299 </p>
+        <p>Phone :- +91 9205761641 +91 7303252495 </p>
 
       </div>
       <div className="contact-content-form">
