@@ -44,7 +44,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="ad">
-        <marquee>Admission Opens For Session 2025-2026 | 100% Job Placements Assistance | Admissions Open For New Batches | Register Now!</marquee>
+        {/* <marquee>Admission Opens For Session 2025-2026 | 100% Job Placements Assistance | Admissions Open For New Batches | Register Now!</marquee> */}
       </div>
 
       <div className="why-us-section">
