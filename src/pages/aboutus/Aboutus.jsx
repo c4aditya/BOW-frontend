@@ -16,92 +16,92 @@ import leftimg from "../../images/leftimage.jpg";
 
 
 
-const Aboutus= () => {
+const Aboutus = () => {
 
-    useEffect(() => {
-      const elements = document.querySelectorAll('.why-us-image, .why-us-text');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
+  useEffect(() => {
+    const elements = document.querySelectorAll('.why-us-image, .why-us-text');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
-  
-      elements.forEach(element => observer.observe(element));
-  
-      // Cleanup observer
-      return () => observer.disconnect();
-    }, []);
-  
-    return (
-      <div className="about-us-layout">
-        {/* About Us Section */}
-        <div className="about-us-section-bg" style={{ backgroundImage: `url(${aboutbg})` }}>
-          <div className="about-us-page">
-            <h1>ABOUT US</h1>
-          
-          </div>
+    });
+
+    elements.forEach(element => observer.observe(element));
+
+    // Cleanup observer
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="about-us-layout">
+      {/* About Us Section */}
+      <div className="about-us-section-bg" style={{ backgroundImage: `url(${aboutbg})` }}>
+        <div className="about-us-page">
+          <h1>ABOUT US</h1>
+
         </div>
-        <div className="ad">
-              <marquee>Admission Opens For Session 2024- 2025 | 100% Job Placements Assistance | Admissions Open For New Batches | Register Now!</marquee>
-        </div>
-  
-        <div className="why-us-section">
-          {/* Section 1: Text on Left, Image on Right */}
-          <div className="why-us-container">
-            <div className="why-us-text">
-              <h3>Awards Winner Support Center</h3>
-              <p>
-                At  Birds of the world Aviation Training Institute, we don’t just teach – we ignite curiosity, foster creativity, and promote innovation. 
-                Our mission is to bridge the gap between theoretical knowledge and practical application, equipping learners with the tools they need to thrive in multiple industries.
-                Since our inception, we have been committed to nurturing entrepreneurial spirit, encouraging fresh ideas.
-                <br />
-                Birds of the wrold Aviation Training Institute is more than just an institute; it's a community where students grow, dream, and achieve. 
-                Here, we believe in empowering every learner to turn their aspirations into reality through hands-on learning, mentorship, and a deep understanding of the evolving professional world.
-                Welcome to  BOW Aviation Training Institute – where your journey to success begins.
-              </p>
-            </div>
-            <div className="why-us-image">
-              <img src={leftimg} alt="Awards Winner Support Center" />
-            </div>
+      </div>
+      <div className="ad">
+        <marquee>Admission Opens For Session 2025-2026 | 100% Job Placements Assistance | Admissions Open For New Batches | Register Now!</marquee>
+      </div>
+
+      <div className="why-us-section">
+        {/* Section 1: Text on Left, Image on Right */}
+        <div className="why-us-container">
+          <div className="why-us-text">
+            <h3>Awards Winner Support Center</h3>
+            <p>
+              At  Birds of the world Aviation Training Institute, we don’t just teach – we ignite curiosity, foster creativity, and promote innovation.
+              Our mission is to bridge the gap between theoretical knowledge and practical application, equipping learners with the tools they need to thrive in multiple industries.
+              Since our inception, we have been committed to nurturing entrepreneurial spirit, encouraging fresh ideas.
+              <br />
+              Birds of the wrold Aviation Training Institute is more than just an institute; it's a community where students grow, dream, and achieve.
+              Here, we believe in empowering every learner to turn their aspirations into reality through hands-on learning, mentorship, and a deep understanding of the evolving professional world.
+              Welcome to  BOW Aviation Training Institute – where your journey to success begins.
+            </p>
           </div>
-  
-          {/* Section 2: Image on Left, Text on Right */}
-          <div className="why-us-container reverse">
-            <div className="why-us-image second">
-              <img src={vision} alt="Our Story" />
-              {/* <img src="pattern.png" alt="Dotted Pattern" className="dotted-pattern"/> */}
-            </div>
-            <div className="why-us-text">
-              <h3>Our Story</h3>
-              <p>
-                It is a long-established fact that you should read. The best Diploma in multiple Courses like Diploma in Aviation, Banking & finance, Information Technology and Merchant Navy, Fire & Safety Training Institute in INDIA. Birds of the world Aviation Training Institute is managed by a team of highly skilled professionals. 
-                <br />
-                We motivate the students to perform any challenging situations which helps them to achieve the pinnacle in their professional life. 
-                We impart the best of training methods about courteous customer service, grooming skills, presentation skills, and also about the quality of education which is required to excel in the Aviation, IT, Banking, Merchant-Navy and the Corporate sectors.
-              </p>
-            </div>
+          <div className="why-us-image">
+            <img src={leftimg} alt="Awards Winner Support Center" />
           </div>
-        </div>
-  
-        {/* Message from Chairman Section */}
-        <div className="message-chairman-section">
-          <div> <Instructors/></div>
         </div>
 
+        {/* Section 2: Image on Left, Text on Right */}
+        <div className="why-us-container reverse">
+          <div className="why-us-image second">
+            <img src={vision} alt="Our Story" />
+            {/* <img src="pattern.png" alt="Dotted Pattern" className="dotted-pattern"/> */}
+          </div>
+          <div className="why-us-text">
+            <h3>Our Story</h3>
+            <p>
+              It is a long-established fact that you should read. The best Diploma in multiple Courses like Diploma in Aviation, Banking & finance, Information Technology and Merchant Navy, Fire & Safety Training Institute in INDIA. Birds of the world Aviation Training Institute is managed by a team of highly skilled professionals.
+              <br />
+              We motivate the students to perform any challenging situations which helps them to achieve the pinnacle in their professional life.
+              We impart the best of training methods about courteous customer service, grooming skills, presentation skills, and also about the quality of education which is required to excel in the Aviation, IT, Banking, Merchant-Navy and the Corporate sectors.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <div className='main-certified-our-instituts'>
+      {/* Message from Chairman Section */}
+      <div className="message-chairman-section">
+        <div> <Instructors /></div>
+      </div>
+
+
+      <div className='main-certified-our-instituts'>
         <h1 class="heading-instructors">Certified by</h1>
         <div className='certified-our-instituts'>
 
           <div className='listing-item'>
             <ul>
-               <li> <span><FaCheck /></span> MCA <sapn className="color"> [ Ministry of Corporate Affairs, Gov. of India ] </sapn> </li>
-               <li> <span><FaCheck /></span> ISO <sapn className="color">  [ International Organization for Standardization ]  </sapn></li>
-               <li> <span><FaCheck /></span> SIDH <sapn className="color"> [ Skill India digital hub ] </sapn></li>
-               <li> <span><FaCheck /></span> IICA <sapn className="color"> [ Indian Institute of Corporate Affairs ] </sapn></li>
-               <li> <span><FaCheck /></span> NCT <sapn className="color"> [National Capital territory ] </sapn></li>
+              <li> <span><FaCheck /></span> MCA <sapn className="color"> [ Ministry of Corporate Affairs, Gov. of India ] </sapn> </li>
+              <li> <span><FaCheck /></span> ISO <sapn className="color">  [ International Organization for Standardization ]  </sapn></li>
+              <li> <span><FaCheck /></span> SIDH <sapn className="color"> [ Skill India digital hub ] </sapn></li>
+              <li> <span><FaCheck /></span> IICA <sapn className="color"> [ Indian Institute of Corporate Affairs ] </sapn></li>
+              <li> <span><FaCheck /></span> NCT <sapn className="color"> [National Capital territory ] </sapn></li>
             </ul>
           </div>
           <div className='certifite-image'>
@@ -109,9 +109,9 @@ const Aboutus= () => {
             </img>
           </div>
         </div>
-        </div>
-        
-        <div className="placement-container">
+      </div>
+
+      <div className="placement-container">
         <div className="placement-item-cc">
           <img src={target} alt="Career Counseling" className="placement-icon" />
           <h4>Personalized Career Counseling</h4>
@@ -143,11 +143,11 @@ const Aboutus= () => {
           <p>Find internships and job opportunities tailored to your diploma.</p>
         </div>
       </div>
-         <div className='our-instructors'>
+      <div className='our-instructors'>
 
-         </div>
       </div>
-    );
-  }
-  
-  export default Aboutus
+    </div>
+  );
+}
+
+export default Aboutus
