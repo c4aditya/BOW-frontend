@@ -23,6 +23,7 @@ import Contact from "./pages/contact/Contact.jsx";
 import Aboutus from "./pages/aboutus/Aboutus.jsx";
 import Refund from "./pages/refund/Refund.jsx"
 import Scroll from "./components/Autoscroll.jsx"
+import MarqueeAnnouncement from "./components/MarqueeAnnouncement.jsx";
 // import { useNavigate } from "react-router-dom";
 function App() {
   const [getData] = useState(data);
@@ -32,6 +33,7 @@ function App() {
     
     <Router>
       <Navbar/>
+      <MarqueeAnnouncement/>
       <Topscroll/>
       <Routes>
         {/* Home Route */}

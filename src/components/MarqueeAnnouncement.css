@@ -1,0 +1,162 @@
+/* Marquee Announcement Bar Container - Matches exact .ad styling of existing announcement bar */
+.marquee-announcement-bar {
+  --marquee-duration: 80s;
+  width: 100%;
+  overflow: hidden;
+  background-color: #91282b;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Continuous Horizontal Scrolling Track using pure CSS Keyframe Animation */
+.marquee-announcement-track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  animation: marqueeScroll var(--marquee-duration, 80s) linear infinite;
+  will-change: transform;
+}
+
+/* Pause scrolling on hover for easy clicking on desktop */
+@media (hover: hover) {
+  .marquee-announcement-bar:hover .marquee-announcement-track {
+    animation-play-state: paused;
+  }
+}
+
+/* Marquee Group Block */
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Individual Announcement Segment */
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.marquee-text-segment {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Pipe Divider */
+.marquee-separator {
+  margin: 0 14px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.marquee-separator-end {
+  margin-right: 18px;
+}
+
+/* Clickable Register Now Link - Preserves existing bar font/colors while being clearly clickable */
+.marquee-register-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.marquee-register-link:hover {
+  opacity: 0.85;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Seamless Infinite Keyframe Animation: 0% to -50% ensures no jumps, flickering, or blank spaces */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+  .marquee-announcement-bar {
+    --marquee-duration: 95s;
+    font-size: 13px;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .marquee-announcement-track {
+    animation-duration: 95s !important;
+  }
+
+  .marquee-item {
+    font-size: 13px;
+  }
+
+  .marquee-separator {
+    margin: 0 10px;
+  }
+
+  .marquee-separator-end {
+    margin-right: 14px;
+  }
+
+  .marquee-register-link {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+  .marquee-announcement-bar {
+    --marquee-duration: 110s;
+    font-size: 12px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .marquee-announcement-track {
+    animation-duration: 110s !important;
+  }
+
+  .marquee-item {
+    font-size: 12px;
+  }
+
+  .marquee-separator {
+    margin: 0 7px;
+  }
+
+  .marquee-separator-end {
+    margin-right: 10px;
+  }
+
+  .marquee-register-link {
+    font-size: 12px;
+  }
+}
+
+/* Accessibility: User Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-announcement-track {
+    animation-duration: 180s !important;
+  }
+}
